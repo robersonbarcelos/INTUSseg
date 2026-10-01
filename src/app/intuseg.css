@@ -355,3 +355,13 @@
   color: var(--_intuseg---colors--gray-600);
   line-height: 1.45;
 }
+
+/* Método em 5 etapas (/v4): do Piloto à Evolução, verdes do mais claro ao atual, para mostrar progressão */
+.method-card.built-card.is--evo-1 {
+  background-color: var(--_intuseg---colors--green-100);
+  color: var(--_intuseg---colors--black);
+}
+.method-card.built-card.is--evo-2 {
+  background-color: var(--_intuseg---colors--green-300);
+  color: var(--_intuseg---colors--black);
+}

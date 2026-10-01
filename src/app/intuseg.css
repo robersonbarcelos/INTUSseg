@@ -43,23 +43,31 @@
   align-items: center;
 }
 
-/* Marca no centro dos círculos de "dois lados": símbolo hexagonal com degradê, sem bordas retas */
+/* Marca no centro dos círculos de "dois lados": fundo escuro com textura de pontos que some nas bordas
+   (como no site de referência) e o símbolo hexagonal em verde com brilho suave */
 .intuseg-mark {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-image:
-    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 38%),
-    radial-gradient(circle at 1px 1px, rgba(43, 77, 96, 0.12) 1px, transparent 1.2px),
-    radial-gradient(ellipse at 50% 50%, #eef3f2 0%, #e2e9e7 50%, #cbd5d2 100%);
-  background-size: 100% 100%, 14px 14px, 100% 100%;
+  background: none;
+}
+.intuseg-mark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.34) 0.9px, transparent 1.3px);
+  background-size: 6px 6px;
+  -webkit-mask-image: radial-gradient(ellipse 8.5% 40% at 50% 50%, #000 0%, rgba(0, 0, 0, 0.45) 50%, transparent 100%);
+  mask-image: radial-gradient(ellipse 8.5% 40% at 50% 50%, #000 0%, rgba(0, 0, 0, 0.45) 50%, transparent 100%);
 }
 .intuseg-hexmark {
-  width: clamp(5.5rem, 9vw, 8rem);
+  position: relative;
+  width: clamp(4.5rem, 7vw, 6.5rem);
   height: auto;
-  filter: drop-shadow(0 0.75rem 1rem rgba(21, 23, 26, 0.18));
+  filter: drop-shadow(0 0 0.9rem rgba(55, 168, 138, 0.45));
 }
 /* A caixa da ilustração cobre a lente inteira (antes ficava menor e deixava cortes retos em cima e embaixo) */
 @media screen and (min-width: 992px) {

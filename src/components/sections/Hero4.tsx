@@ -8,7 +8,7 @@ const html = String.raw`<section id="topo" class="section hero_section">
 <div data-wf--section-chips--variant="base" class="section_chips"><img loading="lazy" src="/assets/6a2ade093d4ed3f8ed40f59a_b02bd53e80ae3ff609dc26af780b742d_Icon.svg" alt="" class="icon_chips"/>
 <div>Automação com IA para corretoras de seguros</div>
 </div>
-<h1 class="title--xl intuseg-h1">Sua corretora não precisa de mais um sistema.<br/><span class="text--grad">Precisa que os sistemas que já tem trabalhem juntos.</span></h1>
+<h1 class="title--xl intuseg-h1">Sua corretora não precisa de mais um sistema.<br/><span class="text--grad">Precisa conectar suas informações de forma inteligente e precisa.</span></h1>
 <div class="w-layout-vflex hero__description-new">
 <p class="text--l">Mapeamos os gargalos da sua operação, conectamos os sistemas que você já usa e automatizamos com IA o trabalho manual que mais pesa. O ganho é medido em horas e em erros evitados.</p></div>
 </div>

@@ -35,3 +35,10 @@ Revisar com Diego e Marcio: itens "Hoje" e "Com a INTUSeg" da seção 2; título
 - **Logo**: wordmark de texto provisório. Falta a logo oficial e o favicon (hoje um "IS" provisório).
 - **Imagem Open Graph**: não existe.
 - **Domínio e INPI** (briefing, item 2).
+
+## Animação do hero (Lottie editado)
+
+O hero usa o Lottie original (movimento intacto), reescrito por `scripts/hero-lottie/build.py`:
+textos em pt-BR (Proposta 2: renovação, cotação, cadastro, resumo ao dono), 4 ícones novos, monograma "IS" no lugar do logo e pictogramas no lugar das fotos.
+Os arquivos originais ficam em `docs/research/hero-lottie/original/`. Para mudar um texto, edite o dicionário `TEXT` no script e rode `python scripts/hero-lottie/build.py`.
+Os horários e números (12 apólices, 3 duplicidades, 14 tarefas) são fictícios e a legenda "Exemplo ilustrativo" aparece sobre a animação.

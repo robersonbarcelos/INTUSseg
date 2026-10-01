@@ -73,149 +73,6 @@
   height: 44%;
 }
 
-/* ---------- Hero: mockup do grupo de WhatsApp ---------- */
-.hero-chat {
-  position: relative;
-  z-index: 1;
-  width: 27rem;
-  max-width: calc(100% - 2rem);
-  margin-left: auto;
-  margin-right: max(2rem, calc((100vw - 85rem) / 2 + 2rem));
-}
-.hero-chat_card {
-  background-color: var(--_intuseg---colors--white);
-  border: 1px solid var(--_intuseg---colors--gray-100);
-  border-radius: 1.5rem;
-  box-shadow: 0 1.5rem 4rem rgba(21, 23, 26, 0.12);
-  overflow: hidden;
-}
-.hero-chat_head {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 1.25rem;
-  background-color: var(--_intuseg---colors--green-500);
-  color: var(--_intuseg---colors--white);
-}
-.hero-chat_avatar {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background-color: var(--_intuseg---colors--white);
-  color: var(--_intuseg---colors--green-500);
-  font-weight: 700;
-  font-size: 0.875rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: none;
-}
-.hero-chat_name {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.2;
-}
-.hero-chat_status {
-  font-size: 0.75rem;
-  line-height: 1.3;
-  opacity: 0.8;
-}
-.hero-chat_body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.625rem;
-  padding: 1.25rem;
-  background-color: var(--_intuseg---colors--gray-50);
-  min-height: 24rem;
-}
-.hero-chat_msg {
-  max-width: 88%;
-  padding: 0.625rem 0.875rem;
-  border-radius: 0.875rem;
-  font-size: 0.9375rem;
-  line-height: 1.4;
-  color: var(--_intuseg---colors--black);
-  position: relative;
-}
-.hero-chat_msg p {
-  margin: 0;
-}
-.hero-chat_msg span {
-  display: block;
-  text-align: right;
-  font-size: 0.6875rem;
-  color: var(--_intuseg---colors--gray-500);
-  margin-top: 0.125rem;
-}
-.hero-chat_msg.is--agent {
-  align-self: flex-start;
-  background-color: var(--_intuseg---colors--white);
-  border: 1px solid var(--_intuseg---colors--gray-100);
-  border-top-left-radius: 0.25rem;
-}
-.hero-chat_msg.is--human {
-  align-self: flex-end;
-  background-color: var(--_intuseg---colors--green-100);
-  border-top-right-radius: 0.25rem;
-}
-.hero-chat_list {
-  align-self: flex-start;
-  width: 94%;
-  background-color: var(--_intuseg---colors--white);
-  border: 1px solid var(--_intuseg---colors--gray-100);
-  border-radius: 0.875rem;
-  overflow: hidden;
-}
-.hero-chat_row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  padding: 0.625rem 0.875rem;
-  font-size: 0.875rem;
-  line-height: 1.3;
-}
-.hero-chat_row + .hero-chat_row {
-  border-top: 1px solid var(--_intuseg---colors--gray-100);
-}
-.hero-chat_row b {
-  font-weight: 500;
-}
-.hero-chat_pill {
-  flex: none;
-  font-size: 0.6875rem;
-  line-height: 1;
-  padding: 0.3125rem 0.5rem;
-  border-radius: 5rem;
-  background-color: var(--_intuseg---colors--green-100);
-  color: var(--_intuseg---colors--green-500);
-  font-weight: 500;
-}
-.hero-chat_note {
-  text-align: center;
-  font-size: 0.6875rem;
-  color: var(--_intuseg---colors--gray-500);
-  margin-top: 0.75rem;
-}
-
-@media screen and (max-width: 991px) {
-  .hero-chat {
-    margin: 0 auto 2rem;
-    width: 26rem;
-  }
-  .hero-chat_body {
-    min-height: 0;
-  }
-}
-@media screen and (max-width: 479px) {
-  .hero-chat {
-    max-width: calc(100% - 2rem);
-  }
-  .hero-chat_msg {
-    font-size: 0.875rem;
-  }
-}
-
 /* ---------- Seção "Como trabalhamos" ---------- */
 .method-grid {
   display: grid;
@@ -406,40 +263,6 @@ div.intuseg-proof .benefits_grid + .benefits_grid {
   text-align: center;
 }
 
-/* Hero no tablet e no celular: o mockup entra no fluxo, abaixo dos botões */
-@media screen and (max-width: 991px) {
-  .hero_container-new {
-    height: auto;
-    min-height: 0;
-    max-height: none;
-    padding-bottom: 3rem;
-  }
-  .hero-animation_wrapp {
-    position: relative;
-    inset: auto;
-    height: auto;
-    overflow: visible;
-    padding-top: 2.5rem;
-    align-items: center;
-  }
-  .hero-animation_wrapp .hero-animation_grad {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .hero-chat_body {
-    padding: 1rem;
-    gap: 0.5rem;
-  }
-  .hero-chat_msg {
-    font-size: 0.8125rem;
-    padding: 0.5rem 0.75rem;
-  }
-  .hero-chat_row {
-    font-size: 0.8125rem;
-  }
-}
 
 /* ---------- Variação 4 (/v4) ---------- */
 .method-grid.is--five {
@@ -471,4 +294,25 @@ div.intuseg-proof .benefits_grid + .benefits_grid {
   max-width: 52rem;
   margin-top: 1.5rem;
   color: var(--_intuseg---colors--gray-600);
+}
+
+/* Legenda do hero: os números e horários da animação são fictícios */
+.hero-lottie_note {
+  position: absolute;
+  z-index: 2;
+  right: 2rem;
+  bottom: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--_intuseg---colors--gray-500);
+  background-color: rgba(242, 246, 245, 0.9);
+  padding: 0.3125rem 0.625rem;
+  border-radius: 5rem;
+}
+@media screen and (max-width: 991px) {
+  .hero-lottie_note {
+    right: auto;
+    left: 1rem;
+    bottom: 0.75rem;
+  }
 }

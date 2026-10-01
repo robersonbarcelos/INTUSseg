@@ -19,22 +19,11 @@ const html = String.raw`<section id="topo" class="section hero_section">
 </a></div>
 </div>
 <div class="hero-animation_wrapp">
-<div class="hero-chat" aria-hidden="true">
-<div class="hero-chat_card">
-<div class="hero-chat_head"><div class="hero-chat_avatar">IS</div><div><div class="hero-chat_name">Renovações da equipe</div><div class="hero-chat_status">Agente INTUSeg · exemplo ilustrativo</div></div></div>
-<div class="hero-chat_body">
-<div class="hero-chat_msg is--agent" data-step><p>Bom dia. Varri a carteira: <b>12 apólices</b> vencem nos próximos 30 dias.</p><span>06:58</span></div>
-<div class="hero-chat_msg is--agent" data-step><p>Multicálculo rodado em todas. Resultados na ordem de vencimento:</p><span>07:01</span></div>
-<div class="hero-chat_list" data-step>
-<div class="hero-chat_row"><b>Auto · vence em 6 dias</b><span class="hero-chat_pill">cálculo pronto</span></div>
-<div class="hero-chat_row"><b>Residencial · vence em 11 dias</b><span class="hero-chat_pill">cálculo pronto</span></div>
-<div class="hero-chat_row"><b>Vida · vence em 19 dias</b><span class="hero-chat_pill">cálculo pronto</span></div>
-</div>
-<div class="hero-chat_msg is--human" data-step><p>Vou ligar para os três primeiros.</p><span>08:12</span></div>
-<div class="hero-chat_msg is--agent" data-step><p>Anotado. Ligações e decisões ficam registradas em cada renovação.</p><span>08:12</span></div>
-</div>
-</div>
-</div>
+<div class="hero_lottie _1280" data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f890" data-animation-type="lottie" data-src="/assets/hero-2500.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="0" data-duration="8" data-loading="lazy"></div>
+<div class="hero_lottie desktop" data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f891" data-animation-type="lottie" data-src="/assets/hero-1280.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="0" data-duration="8" data-loading="lazy"></div>
+<div class="hero_lottie tablet" data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f892" data-animation-type="lottie" data-src="/assets/hero-820.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="0" data-duration="8" data-loading="lazy"></div>
+<div class="hero_lottie mobile" data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f893" data-animation-type="lottie" data-src="/assets/hero-420.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="0" data-duration="8" data-loading="lazy"></div>
+<div class="hero-lottie_note">Exemplo ilustrativo</div>
 <div class="hero-animation_grad"></div>
 <div class="hero-animation_grad is--right"></div>
 </div>

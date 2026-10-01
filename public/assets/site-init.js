@@ -35,22 +35,76 @@ try {
 })();
 } catch (e) { console.warn("site-init inline9", e); }
 
-/* hero: mockup do grupo de WhatsApp (substitui a animação Lottie do site de referência) */
+/* inline11: loop do Lottie do hero (original, 8 s com pausas de 1 s em 25% e 65%) */
 try {
-  (function () {
-    const steps = [...document.querySelectorAll('.hero-chat [data-step]')];
-    if (!steps.length) return;
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduce) return;
-    gsap.set(steps, { opacity: 0, y: 14 });
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.4 });
-    steps.forEach((el, i) => {
-      tl.to(el, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' }, i === 0 ? 0.5 : '+=1.1');
-    });
-    tl.to({}, { duration: 3.4 });
-    tl.to(steps, { opacity: 0, duration: 0.5, ease: 'power1.in' });
-  })();
-} catch (e) { console.warn('hero-chat', e); }
+window.Webflow = window.Webflow || [];
+window.Webflow.push(function () {
+
+  function init() {
+    const lottieModule = Webflow.require('lottie');
+    const animations = lottieModule.lottie.getRegisteredAnimations();
+
+    if (!animations.length) {
+      setTimeout(init, 200);
+      return;
+    }
+
+    const allLotties = document.querySelectorAll('.hero_lottie');
+    const visibleEl = Array.from(allLotties).find(
+      el => getComputedStyle(el).display !== 'none'
+    );
+
+    const anim = animations.find(a => a.wrapper === visibleEl) || animations[0];
+
+    if (!anim) {
+      setTimeout(init, 200);
+      return;
+    }
+
+    anim.stop();
+
+    const proxy = { frame: 0 };
+    const t = anim.totalFrames;
+    const totalDuration = 8;
+
+    function segmentDuration(from, to) {
+      return ((to - from) / t) * totalDuration;
+    }
+
+    function playLoop() {
+      proxy.frame = 0;
+      anim.goToAndStop(0, true);
+
+      gsap.timeline()
+        .to(proxy, {
+          frame: t * 0.25,
+          duration: segmentDuration(0, t * 0.25),
+          ease: 'none',
+          onUpdate: () => anim.goToAndStop(proxy.frame, true)
+        })
+        .to(proxy, {
+          frame: t * 0.65,
+          duration: segmentDuration(t * 0.25, t * 0.65),
+          delay: 1,
+          ease: 'none',
+          onUpdate: () => anim.goToAndStop(proxy.frame, true)
+        })
+        .to(proxy, {
+          frame: t,
+          duration: segmentDuration(t * 0.65, t),
+          delay: 1,
+          ease: 'none',
+          onUpdate: () => anim.goToAndStop(proxy.frame, true),
+          onComplete: playLoop
+        });
+    }
+
+    playLoop();
+  }
+
+  init();
+});
+} catch (e) { console.warn("hero-lottie", e); }
 
 /* inline12 */
 try {

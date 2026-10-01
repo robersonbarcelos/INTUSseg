@@ -121,8 +121,10 @@
 }
 
 /* ---------- Seção "Como medimos / dados / para quem é" ---------- */
-div.intuseg-proof .benefits_grid + .benefits_grid {
-  margin-top: 4rem;
+.intuseg-proof .benefits_grid + .benefits_grid {
+  margin-top: 5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid var(--_intuseg---colors--gray-200);
 }
 .intuseg-proof .benefits_item .title--xs strong {
   font-weight: 500;
@@ -333,5 +335,24 @@ div.intuseg-proof .benefits_grid + .benefits_grid {
     right: auto;
     left: 1rem;
     bottom: 0.75rem;
+  }
+}
+
+/* Seção fixa "Uma renovação": em janelas baixas o conteúdo (791px) passava da altura da tela e cortava o respiro
+   embaixo dos passos. Os espaços verticais passam a encolher junto com a altura da janela. */
+@media screen and (min-width: 992px) and (max-height: 820px) {
+  .section.steps-section {
+    padding-top: max(1.5rem, calc((100vh - 511px) * 0.34));
+    padding-bottom: max(1.5rem, calc((100vh - 511px) * 0.3));
+    grid-row-gap: max(1rem, calc((100vh - 511px) * 0.26));
+  }
+}
+
+/* Seção fixa "Como começa" (roda de cards): mesma correção para janelas baixas */
+@media screen and (min-width: 992px) and (max-height: 820px) {
+  .section.sales-section {
+    padding-top: max(1.5rem, calc((100vh - 448px) * 0.2));
+    padding-bottom: max(1.5rem, calc((100vh - 448px) * 0.25));
+    grid-row-gap: max(1.25rem, calc((100vh - 448px) * 0.12));
   }
 }

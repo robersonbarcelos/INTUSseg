@@ -1,0 +1,9 @@
+
+  designlang
+  https://zig.ai/
+
+- Launching browser...
+[31m✖[39m Extraction failed
+
+  page.$$: Target crashed 
+

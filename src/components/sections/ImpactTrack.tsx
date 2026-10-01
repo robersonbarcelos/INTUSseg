@@ -41,7 +41,7 @@ const html = String.raw`<div data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f933" cl
 </div>
 <div class="impact-item-accent">
 <div class="w-layout-vflex impact-item-accent-text">
-<p class="title--m">Ordem de grandeza, não promessa: o diagnóstico mede o valor real da sua corretora.</p></div>
+<p class="title--m">Cada corretora perde tempo num lugar diferente. O diagnóstico mostra onde é o seu.</p></div>
 </div>
 </div>
 </div>

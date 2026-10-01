@@ -219,11 +219,8 @@ try {
       illus.style.maskImage = mask;
       illus.style.webkitMaskImage = mask;
     }
-    function removeMask() {
-      illus.style.clipPath = '';
-      illus.style.maskImage = '';
-      illus.style.webkitMaskImage = '';
-    }
+    // INTUSeg: o recorte em lente fica sempre aplicado (o original o removia durante o fade e mostrava a caixa inteira)
+    function removeMask() {}
     function buildAnnotations(visible) {
       const svg = document.querySelector('.win-svg-overlay');
       const wrapRect = wrap.getBoundingClientRect();
@@ -325,6 +322,8 @@ try {
       elements = [];
     }
     new MutationObserver(() => {
+      // INTUSeg: a IX2 reescreve o atributo style e apaga o recorte; reaplica sempre que sumir
+      if (!illus.style.clipPath) requestAnimationFrame(applyMask);
       const opacity = getOpacity(illus);
       if (opacity >= MASK_THRESHOLD && maskState === 'hidden') {
         maskState = 'shown';
@@ -344,6 +343,8 @@ try {
         if (fullMode()) hideLines();
       }
     }).observe(tooltips[0], { attributes: true, attributeFilter: ['style'] });
+    requestAnimationFrame(applyMask);
+    window.addEventListener('load', () => requestAnimationFrame(applyMask));
     let resizeTimer;
     window.addEventListener('resize', () => {
       const svg = document.querySelector('.win-svg-overlay');
@@ -353,7 +354,7 @@ try {
       }
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
-        if (maskState === 'shown') applyMask();
+        applyMask();
         const linesVisible = fullMode() && getOpacity(tooltips[0]) >= TIP_THRESHOLD;
         if (linesVisible) {
           linesState = 'shown';

@@ -1,7 +1,47 @@
 window.__siteInit = function () {
-/* inline9 */
+/* inline9: modal (original) + INTUSeg: trava a rolagem da página enquanto o popup está aberto */
 try {
 (() => {
+  let locked = false;
+  let current = null;
+  function lockPage() {
+    if (locked) return;
+    locked = true;
+    const sbw = window.innerWidth - document.documentElement.clientWidth;
+    document.documentElement.style.overflow = 'hidden';
+    if (sbw > 0) document.body.style.paddingRight = sbw + 'px';
+    if (window.__lenis) window.__lenis.stop();
+  }
+  function unlockPage() {
+    if (!locked) return;
+    locked = false;
+    document.documentElement.style.overflow = '';
+    document.body.style.paddingRight = '';
+    if (window.__lenis) window.__lenis.start();
+  }
+  function openModal(modal) {
+    current = modal;
+    modal.style.display = "flex";
+    modal.style.opacity = "0";
+    requestAnimationFrame(() => { modal.style.opacity = "1"; });
+    lockPage();
+  }
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.style.opacity = "0";
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      modal.style.display = "none";
+      modal.removeEventListener('transitionend', handler);
+      if (current === modal) current = null;
+      unlockPage();
+    };
+    function handler(e) { if (e.propertyName === 'opacity') finish(); }
+    modal.addEventListener('transitionend', handler);
+    setTimeout(finish, 450);
+  }
 
   document.querySelectorAll('[data-modal-open]').forEach(btn => {
     btn.addEventListener("click", (ev) => {
@@ -9,9 +49,7 @@ try {
       const modalId = btn.getAttribute('data-modal-open');
       const modal = document.querySelector(`[data-modal="${modalId}"]`);
       if (!modal) return;
-      modal.style.display = "flex";
-      modal.style.opacity = "0";
-      requestAnimationFrame(() => { modal.style.opacity = "1"; });
+      openModal(modal);
     });
   });
 
@@ -21,15 +59,17 @@ try {
       while (modal && (!modal.getAttribute('data-modal') || modal.getAttribute('data-modal') === 'close')) {
         modal = modal.parentElement;
       }
-      if (!modal) return;
-      modal.style.opacity = "0";
-      modal.addEventListener('transitionend', function handler(e) {
-        if (e.propertyName === 'opacity') {
-          modal.style.display = "none";
-          modal.removeEventListener('transitionend', handler);
-        }
-      });
+      closeModal(modal);
     });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && current) closeModal(current);
+  });
+
+  // O Lenis (parado) bloqueia a roda mesmo dentro do popup; o evento não pode chegar até ele.
+  document.querySelectorAll('.modal_wrapp').forEach((w) => {
+    ['wheel', 'touchmove'].forEach((t) => w.addEventListener(t, (e) => e.stopPropagation(), { passive: true }));
   });
 
 })();

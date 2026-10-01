@@ -365,3 +365,8 @@
   background-color: var(--_intuseg---colors--green-300);
   color: var(--_intuseg---colors--black);
 }
+
+/* Popup: a rolagem interna não "vaza" para a página */
+.modal-component .modal_wrapp {
+  overscroll-behavior: contain;
+}

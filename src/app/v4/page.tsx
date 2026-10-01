@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Header, Hero4, ProofLine4, Logos, Pillars4, Identification4, Spacer, Method4, Features, ImpactTrack, WinsTrack, StepsTrack, Testimonials, Proof, Cta, Footer, Overlays } from "@/components/sections";
+import { Header, Hero4, Logos, Pillars4, Identification4, Spacer, Method4, Features, ImpactTrack, WinsTrack, StepsTrack, Testimonials, Proof, Cta, Footer, Overlays } from "@/components/sections";
 import { SiteRuntime } from "@/components/SiteRuntime";
 
 // Versão paralela para comparação com a página principal (/): copy da Variação 4 (Integração).
@@ -13,7 +13,6 @@ export default function V4() {
       <Header />
       <main className="main_wrapp">
         <Hero4 />
-        <ProofLine4 />
         <Logos />
         <Pillars4 />
         <Identification4 />

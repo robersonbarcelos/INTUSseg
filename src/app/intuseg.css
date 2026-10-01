@@ -299,15 +299,6 @@
     grid-template-columns: 1fr;
   }
 }
-.intuseg-proofline {
-  padding-top: 0;
-}
-.intuseg-proofline_text {
-  max-width: 52rem;
-  margin: 0 auto;
-  text-align: center;
-  color: var(--_intuseg---colors--gray-600);
-}
 .intuseg-ident_lead {
   max-width: 62rem;
 }
@@ -355,4 +346,12 @@
     padding-bottom: max(1.5rem, calc((100vh - 448px) * 0.25));
     grid-row-gap: max(1.25rem, calc((100vh - 448px) * 0.12));
   }
+}
+
+/* Linha de prova dentro do hero da /v4: abaixo dos botões, alinhada ao texto */
+.intuseg-hero_proof {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--_intuseg---colors--gray-600);
+  line-height: 1.45;
 }

@@ -440,3 +440,35 @@ div.intuseg-proof .benefits_grid + .benefits_grid {
     font-size: 0.8125rem;
   }
 }
+
+/* ---------- Variação 4 (/v4) ---------- */
+.method-grid.is--five {
+  grid-template-columns: repeat(5, 1fr);
+}
+@media screen and (max-width: 1200px) {
+  .method-grid.is--five {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 479px) {
+  .method-grid.is--five {
+    grid-template-columns: 1fr;
+  }
+}
+.intuseg-proofline {
+  padding-top: 0;
+}
+.intuseg-proofline_text {
+  max-width: 52rem;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--_intuseg---colors--gray-600);
+}
+.intuseg-ident_lead {
+  max-width: 62rem;
+}
+.intuseg-ident_value {
+  max-width: 52rem;
+  margin-top: 1.5rem;
+  color: var(--_intuseg---colors--gray-600);
+}

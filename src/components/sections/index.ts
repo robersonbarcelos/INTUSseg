@@ -13,3 +13,8 @@ export { Footer } from './Footer';
 export { Overlays } from './Overlays';
 export { Method } from './Method';
 export { Proof } from './Proof';
+export { Hero4 } from './Hero4';
+export { ProofLine4 } from './ProofLine4';
+export { Pillars4 } from './Pillars4';
+export { Identification4 } from './Identification4';
+export { Method4 } from './Method4';

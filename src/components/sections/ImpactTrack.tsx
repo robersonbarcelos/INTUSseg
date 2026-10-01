@@ -1,5 +1,52 @@
-// Auto-extracted from https://zig.ai/ (see scripts/build-clone.py)
-const html = "<div data-w-id=\"e22a8e64-76c5-ec90-dab3-4caedf46f933\" class=\"w-layout-vflex impact-animation-track\"><section class=\"section impact-section\"><div class=\"padding_global\"><div class=\"w-layout-vflex container-impact\"><div class=\"w-layout-vflex impact-section_heading animate-block_appear\"><div data-wf--section-chips--variant=\"base\" class=\"section_chips\"><img loading=\"lazy\" src=\"/zig/6a2baff6be86b18d52d34a87_678c4ed9c7f0fe2b3dbca4429bca2c4b_Icon3.svg\" alt=\"\" class=\"icon_chips\"/><div>The impact</div></div><div class=\"w-layout-vflex impact_title\"><h2 class=\"title--l\">What changes <span class=\"text--grad\">when Zig runs</span></h2></div><p class=\"text--l\">What happens when the rep finally has a team.</p></div><div class=\"impact-list\"><div class=\"impact-item is--01\"><div class=\"impact-content\"><div class=\"text--number\">60+</div><div class=\"text--l\">Hours back. Per rep. Every month.</div></div><div class=\"impact-bg\"></div></div><div class=\"impact-item is--02\"><div class=\"impact-content\"><div class=\"text--number\">95%</div><div class=\"text--l\">CRM accuracy. Zero manual entry.</div></div><div class=\"impact-bg\"></div></div><div class=\"impact-item is--03\"><div class=\"impact-content\"><div class=\"text--number\">30%</div><div class=\"text--l\">Faster from first touch to close.</div></div><div class=\"impact-bg\"></div></div><div class=\"impact-item is--04\"><div class=\"impact-content\"><div class=\"text--number\">3x</div><div class=\"text--l\">Revenue impact. Measured across real deployments.</div></div><div class=\"impact-bg\"></div></div><div class=\"impact-item-accent\"><div class=\"w-layout-vflex impact-item-accent-text\"><p class=\"title--m\">The longer it runs, the wider the gap between you and everyone starting fresh.</p></div></div></div></div></div></section></div>";
+// Conteúdo extraído de https://zig.ai/ e adaptado para a INTUSeg
+const html = String.raw`<div data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f933" class="w-layout-vflex impact-animation-track">
+<section class="section impact-section">
+<div class="padding_global">
+<div class="w-layout-vflex container-impact">
+<div class="w-layout-vflex impact-section_heading animate-block_appear">
+<div data-wf--section-chips--variant="base" class="section_chips"><img loading="lazy" src="/zig/6a2baff6be86b18d52d34a87_678c4ed9c7f0fe2b3dbca4429bca2c4b_Icon3.svg" alt="" class="icon_chips"/>
+<div>The impact</div>
+</div>
+<div class="w-layout-vflex impact_title">
+<h2 class="title--l">What changes <span class="text--grad">when Zig runs</span></h2></div>
+<p class="text--l">What happens when the rep finally has a team.</p></div>
+<div class="impact-list">
+<div class="impact-item is--01">
+<div class="impact-content">
+<div class="text--number">60+</div>
+<div class="text--l">Hours back. Per rep. Every month.</div>
+</div>
+<div class="impact-bg"></div>
+</div>
+<div class="impact-item is--02">
+<div class="impact-content">
+<div class="text--number">95%</div>
+<div class="text--l">CRM accuracy. Zero manual entry.</div>
+</div>
+<div class="impact-bg"></div>
+</div>
+<div class="impact-item is--03">
+<div class="impact-content">
+<div class="text--number">30%</div>
+<div class="text--l">Faster from first touch to close.</div>
+</div>
+<div class="impact-bg"></div>
+</div>
+<div class="impact-item is--04">
+<div class="impact-content">
+<div class="text--number">3x</div>
+<div class="text--l">Revenue impact. Measured across real deployments.</div>
+</div>
+<div class="impact-bg"></div>
+</div>
+<div class="impact-item-accent">
+<div class="w-layout-vflex impact-item-accent-text">
+<p class="title--m">The longer it runs, the wider the gap between you and everyone starting fresh.</p></div>
+</div>
+</div>
+</div>
+</div>
+</section></div>`;
 
 export function ImpactTrack() {
   return <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: html }} />;

@@ -1,5 +1,95 @@
-// Auto-extracted from https://zig.ai/ (see scripts/build-clone.py)
-const html = "<section class=\"section main\"><div class=\"padding_global\"><div class=\"w-layout-vflex container\"><div class=\"w-layout-vflex main_grid\"><div id=\"w-node-e22a8e64-76c5-ec90-dab3-4caedf46fa43-62a4fde0\" class=\"w-layout-vflex faq_section-title\"><h2 class=\"title--l\">FAQ</h2><div class=\"text--l\">Something we didn&#x27;t cover? Talk to us.</div></div><div id=\"w-node-e22a8e64-76c5-ec90-dab3-4caedf46fa48-62a4fde0\" class=\"faq_accordion-list\"><div class=\"accordion\"><div class=\"accordion-control\"><div class=\"title--s\">I already use Salesforce, Gong, and Apollo. Do I have to give them up?</div><div class=\"accordion-icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_plus\"><path d=\"M12 5V19M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_minus\"><path d=\"M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></div></div><div class=\"accordion-content\"><div class=\"w-layout-vflex accordion-content-text\"><div class=\"text--l\">No. Your assistants connect to the tools you already use — CRM, inbox, calendar, outreach platforms. Zig reads what&#x27;s there and starts working from day one. No migration, no rip-and-replace.</div></div></div></div><div class=\"accordion\"><div class=\"accordion-control\"><div class=\"title--s\">Can I use Zig from my phone or by voice?</div><div class=\"accordion-icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_plus\"><path d=\"M12 5V19M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_minus\"><path d=\"M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></div></div><div class=\"accordion-content\"><div class=\"w-layout-vflex accordion-content-text\"><div class=\"text--l\">Yes. The ZigMobile app lets you command your assistants from anywhere — scan a badge, send a voice update, approve an outreach sequence. Your team travels with you.</div></div></div></div><div class=\"accordion\"><div class=\"accordion-control\"><div class=\"title--s\">How quickly does it start doing useful work?</div><div class=\"accordion-icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_plus\"><path d=\"M12 5V19M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_minus\"><path d=\"M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></div></div><div class=\"accordion-content\"><div class=\"w-layout-vflex accordion-content-text\"><div class=\"text--l\">Most reps see their first output — a lead list, a morning brief, or a drafted follow-up — within 24 hours of connecting their CRM. Zig compounds. The more it runs, the sharper it gets.</div></div></div></div><div class=\"accordion\"><div class=\"accordion-control\"><div class=\"title--s\">My reps won&#x27;t adopt another tool — and will they actually be in control?</div><div class=\"accordion-icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_plus\"><path d=\"M12 5V19M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_minus\"><path d=\"M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></div></div><div class=\"accordion-content\"><div class=\"w-layout-vflex accordion-content-text\"><div class=\"text--l\">They don&#x27;t have to open it, and they never lose control. Zig works through the surfaces your reps already use — email, Slack, their phone. The assistants handle the work in the background: drafting, preparing, proposing. Reps get one tap to approve before anything goes out. No new interface to learn. No risk of something sending without them knowing.</div></div></div></div><div class=\"accordion\"><div class=\"accordion-control\"><div class=\"title--s\">How does Zig get smarter over time?</div><div class=\"accordion-icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_plus\"><path d=\"M12 5V19M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_minus\"><path d=\"M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></div></div><div class=\"accordion-content\"><div class=\"w-layout-vflex accordion-content-text\"><div class=\"text--l\">Every call, email, and deal adds to what your assistants know about your team, your buyers, and what closes. At month 12, they know your pipeline better than a new hire could in their first year. That&#x27;s the compounding effect — and it&#x27;s yours.</div></div></div></div><div class=\"accordion\"><div class=\"accordion-control\"><div class=\"title--s\">Who is Zig built for?</div><div class=\"accordion-icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_plus\"><path d=\"M12 5V19M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_minus\"><path d=\"M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></div></div><div class=\"accordion-content\"><div class=\"w-layout-vflex accordion-content-text\"><div class=\"text--l\">Any rep who spends too much time on work that isn&#x27;t selling. Any leader who&#x27;s tired of pipeline reviews that don&#x27;t reflect reality. From a solo founder doing their own outreach to a VP running a team of fifty.</div></div></div></div><div class=\"accordion\"><div class=\"accordion-control\"><div class=\"title--s\">How does Zig price — is it per seat?</div><div class=\"accordion-icon\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_plus\"><path d=\"M12 5V19M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"accordion-icon_minus\"><path d=\"M5 12H19\" stroke=\"#15171A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></div></div><div class=\"accordion-content\"><div class=\"w-layout-vflex accordion-content-text\"><div class=\"text--l\">No per-seat charges. You pre-buy a pool of executions — the work your assistants actually do. Unused executions carry forward. You pay for output, not headcount.</div></div></div></div></div></div></div></div></section>";
+// Conteúdo extraído de https://zig.ai/ e adaptado para a INTUSeg
+const html = String.raw`<section class="section main">
+<div class="padding_global">
+<div class="w-layout-vflex container">
+<div class="w-layout-vflex main_grid">
+<div id="w-node-e22a8e64-76c5-ec90-dab3-4caedf46fa43-62a4fde0" class="w-layout-vflex faq_section-title">
+<h2 class="title--l">FAQ</h2>
+<div class="text--l">Something we didn&#x27;t cover? Talk to us.</div>
+</div>
+<div id="w-node-e22a8e64-76c5-ec90-dab3-4caedf46fa48-62a4fde0" class="faq_accordion-list">
+<div class="accordion">
+<div class="accordion-control">
+<div class="title--s">I already use Salesforce, Gong, and Apollo. Do I have to give them up?</div>
+<div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div class="accordion-content">
+<div class="w-layout-vflex accordion-content-text">
+<div class="text--l">No. Your assistants connect to the tools you already use — CRM, inbox, calendar, outreach platforms. Zig reads what&#x27;s there and starts working from day one. No migration, no rip-and-replace.</div>
+</div>
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-control">
+<div class="title--s">Can I use Zig from my phone or by voice?</div>
+<div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div class="accordion-content">
+<div class="w-layout-vflex accordion-content-text">
+<div class="text--l">Yes. The ZigMobile app lets you command your assistants from anywhere — scan a badge, send a voice update, approve an outreach sequence. Your team travels with you.</div>
+</div>
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-control">
+<div class="title--s">How quickly does it start doing useful work?</div>
+<div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div class="accordion-content">
+<div class="w-layout-vflex accordion-content-text">
+<div class="text--l">Most reps see their first output — a lead list, a morning brief, or a drafted follow-up — within 24 hours of connecting their CRM. Zig compounds. The more it runs, the sharper it gets.</div>
+</div>
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-control">
+<div class="title--s">My reps won&#x27;t adopt another tool — and will they actually be in control?</div>
+<div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div class="accordion-content">
+<div class="w-layout-vflex accordion-content-text">
+<div class="text--l">They don&#x27;t have to open it, and they never lose control. Zig works through the surfaces your reps already use — email, Slack, their phone. The assistants handle the work in the background: drafting, preparing, proposing. Reps get one tap to approve before anything goes out. No new interface to learn. No risk of something sending without them knowing.</div>
+</div>
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-control">
+<div class="title--s">How does Zig get smarter over time?</div>
+<div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div class="accordion-content">
+<div class="w-layout-vflex accordion-content-text">
+<div class="text--l">Every call, email, and deal adds to what your assistants know about your team, your buyers, and what closes. At month 12, they know your pipeline better than a new hire could in their first year. That&#x27;s the compounding effect — and it&#x27;s yours.</div>
+</div>
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-control">
+<div class="title--s">Who is Zig built for?</div>
+<div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div class="accordion-content">
+<div class="w-layout-vflex accordion-content-text">
+<div class="text--l">Any rep who spends too much time on work that isn&#x27;t selling. Any leader who&#x27;s tired of pipeline reviews that don&#x27;t reflect reality. From a solo founder doing their own outreach to a VP running a team of fifty.</div>
+</div>
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-control">
+<div class="title--s">How does Zig price — is it per seat?</div>
+<div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div class="accordion-content">
+<div class="w-layout-vflex accordion-content-text">
+<div class="text--l">No per-seat charges. You pre-buy a pool of executions — the work your assistants actually do. Unused executions carry forward. You pay for output, not headcount.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>`;
 
 export function Cta() {
   return <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: html }} />;

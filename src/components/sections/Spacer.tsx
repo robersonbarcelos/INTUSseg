@@ -1,5 +1,20 @@
-// Auto-extracted from https://zig.ai/ (see scripts/build-clone.py)
-const html = "<section class=\"section\"><div class=\"padding_global\"><div class=\"w-layout-vflex container\"><div data-w-id=\"1c97c66c-14c5-df64-1e1f-0f58f91a9f6d\" class=\"w-layout-vflex trusted-container\"><div class=\"trusted-wrapp\"><div class=\"title--s is--gray-600\">Trusted by</div><div class=\"trusted-track\"><div class=\"trusted-list\"><img src=\"/zig/6a5df95bee9272a0cc668d3d_Ketch_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a5df95c395883bf3f77d903_Velociti_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a5df95bbce231501b99e7fb_Velociti_Logo-1.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a5df95be65d6d822476ea92_Checksum_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a607174d8723e617a1f1bfa_SellingSara_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/></div><div class=\"trusted-list\"><img src=\"/zig/6a5df95bee9272a0cc668d3d_Ketch_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a5df95c395883bf3f77d903_Velociti_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a5df95bbce231501b99e7fb_Velociti_Logo-1.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a5df95be65d6d822476ea92_Checksum_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a607174d8723e617a1f1bfa_SellingSara_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/></div><div class=\"trusted-list\"><img src=\"/zig/6a5df95bee9272a0cc668d3d_Ketch_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a5df95c395883bf3f77d903_Velociti_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a5df95bbce231501b99e7fb_Velociti_Logo-1.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a5df95be65d6d822476ea92_Checksum_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/><img src=\"/zig/6a607174d8723e617a1f1bfa_SellingSara_Logo.svg\" loading=\"lazy\" alt=\"\" class=\"trusted-logo\"/></div></div></div></div></div></div></section>";
+// Conteúdo extraído de https://zig.ai/ e adaptado para a INTUSeg
+const html = String.raw`<section class="section">
+<div class="padding_global">
+<div class="w-layout-vflex container">
+<div data-w-id="1c97c66c-14c5-df64-1e1f-0f58f91a9f6d" class="w-layout-vflex trusted-container">
+<div class="trusted-wrapp">
+<div class="title--s is--gray-600">Trusted by</div>
+<div class="trusted-track">
+<div class="trusted-list"><img src="/zig/6a5df95bee9272a0cc668d3d_Ketch_Logo.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a5df95c395883bf3f77d903_Velociti_Logo.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a5df95bbce231501b99e7fb_Velociti_Logo-1.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a5df95be65d6d822476ea92_Checksum_Logo.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a607174d8723e617a1f1bfa_SellingSara_Logo.svg" loading="lazy" alt="" class="trusted-logo"/></div>
+<div class="trusted-list"><img src="/zig/6a5df95bee9272a0cc668d3d_Ketch_Logo.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a5df95c395883bf3f77d903_Velociti_Logo.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a5df95bbce231501b99e7fb_Velociti_Logo-1.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a5df95be65d6d822476ea92_Checksum_Logo.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a607174d8723e617a1f1bfa_SellingSara_Logo.svg" loading="lazy" alt="" class="trusted-logo"/></div>
+<div class="trusted-list"><img src="/zig/6a5df95bee9272a0cc668d3d_Ketch_Logo.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a5df95c395883bf3f77d903_Velociti_Logo.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a5df95bbce231501b99e7fb_Velociti_Logo-1.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a5df95be65d6d822476ea92_Checksum_Logo.svg" loading="lazy" alt="" class="trusted-logo"/><img src="/zig/6a607174d8723e617a1f1bfa_SellingSara_Logo.svg" loading="lazy" alt="" class="trusted-logo"/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>`;
 
 export function Spacer() {
   return <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: html }} />;

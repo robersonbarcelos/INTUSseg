@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import "./zig.css";
+import "./site.css";
+import "./intuseg.css";
 
 const DESC =
-  "Sales intelligence & execution platform for B2B teams. ZIg eliminates sales admin by handling busywork, so humans close deals.";
-const TITLE = "The AI engine that keeps your entire sales motion moving | zig.ai";
+  "Mapeamos os processos da sua corretora, achamos os gargalos e construímos a automação sobre os sistemas que você já usa. Ganho medido em horas.";
+const TITLE = "INTUSeg | Automação de processos com IA para corretoras";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESC,
-  icons: { icon: "/zig/ico-32.png", apple: "/zig/ico-256.png" },
-  openGraph: { title: TITLE, description: DESC, type: "website", images: ["/zig/zig-OG.jpg"] },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESC },
+  icons: { icon: "/assets/intuseg-favicon.svg" },
+  openGraph: { title: TITLE, description: DESC, type: "website", locale: "pt_BR" },
+  twitter: { card: "summary", title: TITLE, description: DESC },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       data-wf-domain="zig.ai"
       data-wf-page="697c82adb518a76f62a4fde0"
       data-wf-site="692db0eaf3c473ac91a06392"

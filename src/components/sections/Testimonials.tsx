@@ -1,50 +1,83 @@
-// Conteúdo extraído de https://zig.ai/ e adaptado para a INTUSeg
-const html = String.raw`<section class="section testimonials">
+// Conteúdo da INTUSeg (estrutura de seções e animações herdadas do site de referência)
+const html = String.raw`<section id="casos" class="section testimonials">
 <div class="padding_global">
-<div class="w-layout-vflex container is--relative"><img src="/zig/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2.png" loading="lazy" sizes="100vw" srcset="/zig/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2-p-500.png 500w, /zig/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2-p-800.png 800w, /zig/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2-p-1080.png 1080w, /zig/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2-p-1600.png 1600w, /zig/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2.png 1756w" alt="" class="testim-section_bg"/>
+<div class="w-layout-vflex container is--relative"><img src="/assets/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2.png" loading="lazy" sizes="100vw" srcset="/assets/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2-p-500.png 500w, /assets/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2-p-800.png 800w, /assets/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2-p-1080.png 1080w, /assets/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2-p-1600.png 1600w, /assets/6a2fef7294d8db83d0ec56aa_d79dbe81e56d37bc949d243b9016ae15_Pattern2.png 1756w" alt="" class="testim-section_bg"/>
 <div class="w-layout-vflex section_heading animate-block_appear">
-<div data-wf--section-chips--variant="dark" class="section_chips w-variant-28ba76d0-08d9-d4d7-40be-ef11d536cd9f"><img loading="lazy" src="/zig/6a2fef15ca223b3103a3fe46_Star_Icon.svg" alt="" class="icon_chips"/>
-<div>Testimonials</div>
+<div data-wf--section-chips--variant="dark" class="section_chips w-variant-28ba76d0-08d9-d4d7-40be-ef11d536cd9f"><img loading="lazy" src="/assets/6a2fef15ca223b3103a3fe46_Star_Icon.svg" alt="" class="icon_chips"/>
+<div>Casos</div>
 </div>
 <div class="w-layout-vflex sales-section_title">
-<h2 class="title--l">What Our Clients Say</h2></div>
+<h2 class="title--l">Mesmo processo, realidades diferentes</h2></div>
 </div>
 <div class="w-layout-vflex main_grid">
 <div id="w-node-e22a8e64-76c5-ec90-dab3-4caedf46fa2d-62a4fde0" class="testim_slider splide">
 <div class="testim-slider_track splide__track w-dyn-list">
 <div role="list" class="testim-slider_list splide__list w-dyn-items">
 <div role="listitem" class="testim-slider_slide splide__slide w-dyn-item">
-<p class="title--m">“As someone who’s constantly prospecting, Zig.ai has been a game changer. I can quickly build lists, find verified phone numbers and emails, and use the phone app to create personalized emails in seconds, which means I spend less time researching and more time actually selling.”</p>
+<p class="title--m">Quando o colaborador chega, os cálculos da janela de 30 dias já estão no grupo de WhatsApp da empresa.</p>
 <div class="w-layout-vflex testim-slide_content">
-<div class="testim-slider_person"><img src="/zig/6a69ce6b5a157a9bbb2aea92_Sara_Uy.avif" loading="lazy" width="88" height="88" alt="SellingSara" class="slide_avatar"/>
+<div class="testim-slider_person"><div class="slide_avatar is--icon" style="width:88px;height:88px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg></div>
 <div class="slider_person-name">
-<div class="title--s">Sara Uy</div>
-<div class="text--m opacity-60">Founder, SellingSara</div>
+<div class="title--s">Corretora com Aggilizador</div>
+<div class="text--m opacity-60">Renovação no grupo da equipe</div>
 </div>
 </div>
-<img src="/zig/6a69ce7c89f3eb5c00cf4afe_SellingSara_Logo-w.svg" loading="lazy" alt="SellingSara" class="testim-slider_logo"/></div>
+</div>
 </div>
 <div role="listitem" class="testim-slider_slide splide__slide w-dyn-item">
-<p class="title--m">“Zig.ai has significantly increased our outbound success. It helps us identify our ideal customers, enrich our data, deliver the right message, and reach prospects through the right channels all within one platform.”</p>
+<p class="title--m">A renovação é assistida: a carteira é acompanhada e a renovação disparada no prazo, sem depender da memória de cada corretor. O atendimento saiu de celulares soltos e passou para um número corporativo com histórico.</p>
 <div class="w-layout-vflex testim-slide_content">
-<div class="testim-slider_person"><img src="/zig/6a5e0153c6ae04d19e1de34b_Rectangle_1614426176.avif" loading="lazy" width="88" height="88" alt="Ketch" class="slide_avatar"/>
+<div class="testim-slider_person"><div class="slide_avatar is--icon" style="width:88px;height:88px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
 <div class="slider_person-name">
-<div class="title--s">Stéphane Le Mentec</div>
-<div class="text--m opacity-60">Director of Demand Generation, Ketch</div>
+<div class="title--s">Rede de franquias de corretoras</div>
+<div class="text--m opacity-60">Renovação assistida</div>
 </div>
 </div>
-<img src="/zig/6a5e01672d674546bb2fc5e6_Ketch_Logo2.svg" loading="lazy" alt="Ketch" class="testim-slider_logo"/></div>
+</div>
 </div>
 <div role="listitem" class="testim-slider_slide splide__slide w-dyn-item">
-<p class="title--m">“Best-in-Class AI GTM Assistant with Clean UI and Smart Prompts.”</p>
+<p class="title--m">Renovação e cotação rodam como processo, sobre o CORP, o CorpAPI e o Aggilizador, sem substituir nenhum deles. Cada caso guarda documentos, tentativas de cotação, ações e decisões humanas.</p>
 <div class="w-layout-vflex testim-slide_content">
-<div class="testim-slider_person"><img src="/zig/6a5e010813ea68946c35f383_Rectangle_1614426177.avif" loading="lazy" width="88" height="88" alt="Velociti" class="slide_avatar"/>
+<div class="testim-slider_person"><div class="slide_avatar is--icon" style="width:88px;height:88px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
 <div class="slider_person-name">
-<div class="title--s">Anthony Argenziano</div>
-<div class="text--m opacity-60">Founder &amp; CEO, Velociti</div>
+<div class="title--s">Corretora com CORP e Aggilizador</div>
+<div class="text--m opacity-60">Processo registrado</div>
 </div>
 </div>
-<img src="/zig/6a5e013ac9f2ccc48ff76e6e_Velociti_Logo2.svg" loading="lazy" alt="Velociti" class="testim-slider_logo"/></div>
+</div>
+</div>
+<div role="listitem" class="testim-slider_slide splide__slide w-dyn-item">
+<p class="title--m">As apólices estavam espalhadas no Google Drive e o fluxo comercial rodava em um CRM improvisado. Construímos uma base central, desligamos os dois, e o agente passou a trabalhar dentro dela.</p>
+<div class="w-layout-vflex testim-slide_content">
+<div class="testim-slider_person"><div class="slide_avatar is--icon" style="width:88px;height:88px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg></div>
+<div class="slider_person-name">
+<div class="title--s">Corretora com apólices no Drive</div>
+<div class="text--m opacity-60">Base central</div>
+</div>
+</div>
+</div>
+</div>
+<div role="listitem" class="testim-slider_slide splide__slide w-dyn-item">
+<p class="title--m">O histórico de cada segurado era guardado em papel. O agente passou a criar e alterar a folha de rosto digital, e a impressão sai dela.</p>
+<div class="w-layout-vflex testim-slide_content">
+<div class="testim-slider_person"><div class="slide_avatar is--icon" style="width:88px;height:88px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+<div class="slider_person-name">
+<div class="title--s">Corretora com histórico em papel</div>
+<div class="text--m opacity-60">Folha de rosto digital</div>
+</div>
+</div>
+</div>
+</div>
+<div role="listitem" class="testim-slider_slide splide__slide w-dyn-item">
+<p class="title--m">Nenhuma plataforma oferecia o cálculo de que a corretora precisava. Construímos o multicálculo, e hoje os cálculos saem direto do WhatsApp.</p>
+<div class="w-layout-vflex testim-slide_content">
+<div class="testim-slider_person"><div class="slide_avatar is--icon" style="width:88px;height:88px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h2M16 12h0M8 16h2M12 16h2M16 16h0"/></svg></div>
+<div class="slider_person-name">
+<div class="title--s">Corretora de nicho</div>
+<div class="text--m opacity-60">Multicálculo sob medida</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

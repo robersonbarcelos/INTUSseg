@@ -1,4 +1,4 @@
-// Conteúdo extraído de https://zig.ai/ e adaptado para a INTUSeg
+// Conteúdo da INTUSeg (estrutura de seções e animações herdadas do site de referência)
 const html = String.raw`<div data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f99d" class="w-layout-vflex steps-animation-wrapp">
 <div data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f99e" class="w-layout-vflex steps-animation-track">
 <section class="section steps-section">
@@ -6,17 +6,17 @@ const html = String.raw`<div data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f99d" cl
 <div class="w-layout-vflex container">
 <div class="w-layout-vflex steps-section_heading animate-block_appear">
 <div class="w-layout-vflex section_heading">
-<div data-wf--section-chips--variant="green" class="section_chips w-variant-f8d39699-44e3-ff8a-4bbe-457969ecd496"><img loading="lazy" src="/zig/6a2c17afc314109f37258f0f_28976eb8638efddb2ffb91df9feb710f_Arrow_Icon.svg" alt="" class="icon_chips"/>
-<div>Every workflow</div>
+<div data-wf--section-chips--variant="green" class="section_chips w-variant-f8d39699-44e3-ff8a-4bbe-457969ecd496"><img loading="lazy" src="/assets/6a2c17afc314109f37258f0f_28976eb8638efddb2ffb91df9feb710f_Arrow_Icon.svg" alt="" class="icon_chips"/>
+<div>Uma renovação</div>
 </div>
 <div class="w-layout-vflex steps_title">
-<h2 class="title--l">Every part of the sale. Handled.</h2>
+<h2 class="title--l">Da varredura à medição.</h2>
 <div class="w-layout-vflex steps_sub">
-<p class="text--l">Every workflow in your sales motion — researched, executed, tracked, and followed through. Automatically.</p></div>
+<p class="text--l">A renovação é o processo de partida. O mesmo método vale para cotação, cadastro e documentos.</p></div>
 </div>
 </div>
-<a data-modal-open="" data-wf--button--variant="primary-m" href="/how-it-works" class="button w-inline-block">
-<div>Learn more</div>
+<a data-wf--button--variant="primary-m" href="#processos" class="button w-inline-block">
+<div>Ver os processos</div>
 </a></div>
 </div>
 </div>
@@ -26,56 +26,56 @@ const html = String.raw`<div data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f99d" cl
 <div class="w-layout-vflex step-container">
 <div class="steps-track">
 <div class="step_item">
-<div class="step_icon"><img src="/zig/699c89b81528d48f5ad1da0c_Logo.svg" loading="lazy" alt="" class="step_logo"/></div>
+<div class="step_icon"><span class="step_num">1</span></div>
 <div class="w-layout-vflex step_content">
-<div class="text--70">Research</div>
+<div class="text--70">Varredura</div>
 <div class="w-layout-vflex step_sub">
-<div class="text--l">Every prospect researched before you reach out.</div>
+<div class="text--l">O agente varre a carteira na janela de vencimento definida.</div>
 </div>
 </div>
 </div>
 <div class="step_item">
-<div class="step_icon"><img src="/zig/699c89b81528d48f5ad1da0c_Logo.svg" loading="lazy" alt="" class="step_logo"/></div>
+<div class="step_icon"><span class="step_num">2</span></div>
 <div class="w-layout-vflex step_content">
-<div class="text--70">Outreach</div>
+<div class="text--70">Cálculo</div>
 <div class="w-layout-vflex step_sub">
-<div class="text--l">Every message drafted, sent, and followed through.</div>
+<div class="text--l">Roda o seu multicálculo em cada apólice.</div>
 </div>
 </div>
 </div>
 <div class="step_item">
-<div class="step_icon"><img src="/zig/699c89b81528d48f5ad1da0c_Logo.svg" loading="lazy" alt="" class="step_logo"/></div>
+<div class="step_icon"><span class="step_num">3</span></div>
 <div class="w-layout-vflex step_content">
-<div class="text--70">Meetings</div>
+<div class="text--70">Grupo</div>
 <div class="w-layout-vflex step_sub">
-<div class="text--l">Every call prepped, recorded, and summarized.</div>
+<div class="text--l">Deixa o resultado pronto no grupo da equipe.</div>
 </div>
 </div>
 </div>
 <div class="step_item">
-<div class="step_icon"><img src="/zig/699c89b81528d48f5ad1da0c_Logo.svg" loading="lazy" alt="" class="step_logo"/></div>
+<div class="step_icon"><span class="step_num">4</span></div>
 <div class="w-layout-vflex step_content">
-<div class="text--70">Follow-Up</div>
+<div class="text--70">Decisão</div>
 <div class="w-layout-vflex step_sub">
-<div class="text--l">Every pending action tracked and handled.</div>
+<div class="text--l">O corretor revisa, liga e decide.</div>
 </div>
 </div>
 </div>
 <div class="step_item">
-<div class="step_icon"><img src="/zig/699c89b81528d48f5ad1da0c_Logo.svg" loading="lazy" alt="" class="step_logo"/></div>
+<div class="step_icon"><span class="step_num">5</span></div>
 <div class="w-layout-vflex step_content">
-<div class="text--70">CRM Sync</div>
+<div class="text--70">Registro</div>
 <div class="w-layout-vflex step_sub">
-<div class="text--l">Every interaction captured. CRM always current.</div>
+<div class="text--l">Cada ação fica registrada, com histórico.</div>
 </div>
 </div>
 </div>
 <div class="step_item">
-<div class="step_icon"><img src="/zig/699c89b81528d48f5ad1da0c_Logo.svg" loading="lazy" alt="" class="step_logo"/></div>
+<div class="step_icon"><span class="step_num">6</span></div>
 <div class="w-layout-vflex step_content">
-<div class="text--70">Pipeline</div>
+<div class="text--70">Medição</div>
 <div class="w-layout-vflex step_sub">
-<div class="text--l">Every deal monitored. Every risk surfaced early.</div>
+<div class="text--l">Renovações no prazo e horas por ciclo, antes e depois.</div>
 </div>
 </div>
 </div>
@@ -92,13 +92,13 @@ const html = String.raw`<div data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f99d" cl
 <div class="w-layout-vflex container">
 <div class="w-layout-vflex sales-section_heading">
 <div class="w-layout-vflex section_heading">
-<div data-wf--section-chips--variant="base" class="section_chips"><img loading="lazy" src="/zig/6a2baff6be86b18d52d34a87_678c4ed9c7f0fe2b3dbca4429bca2c4b_Icon3.svg" alt="" class="icon_chips"/>
-<div>Gets smarter every deal</div>
+<div data-wf--section-chips--variant="base" class="section_chips"><img loading="lazy" src="/assets/6a2baff6be86b18d52d34a87_678c4ed9c7f0fe2b3dbca4429bca2c4b_Icon3.svg" alt="" class="icon_chips"/>
+<div>Como começa</div>
 </div>
 <div class="w-layout-vflex sales-section_title">
-<h2 class="title--l"><span class="text--grad">The only sales team</span> that gets better the longer it works for you</h2>
+<h2 class="title--l"><span class="text--grad">Do diagnóstico</span> à operação rodando</h2>
 <div class="w-layout-vflex sales-section_sub">
-<p class="text--l">Most tools forget everything the moment you log out. Zig remembers every call, every deal, every signal — and uses it to make the next move sharper.</p></div>
+<p class="text--l">Cada fase se justifica pelo ganho que o diagnóstico aponta. Um projeto que não dá retorno não deve ser feito.</p></div>
 </div>
 </div>
 </div>
@@ -109,27 +109,27 @@ const html = String.raw`<div data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f99d" cl
 <div class="sales-cards">
 <div class="sales-cards_track">
 <div class="sales-card">
-<div class="title--s is--green">Month 1</div>
-<div class="title--xs">Learns how you sell Your CRM, deals, and ICPs. From day one.</div>
+<div class="title--s is--green">Passo 1</div>
+<div class="title--xs">Diagnóstico operacional. Mapa dos processos, ordem de automação por impacto e a linha de base da medição.</div>
 </div>
 <div class="sales-card">
-<div class="title--s is--green">Month 3</div>
-<div class="title--xs">Spots what closes Patterns across your best reps, automatically.</div>
+<div class="title--s is--green">Passo 2</div>
+<div class="title--xs">Implantação por marcos. Começamos pelo processo de maior retorno e treinamos a equipe ao longo do caminho.</div>
 </div>
 <div class="sales-card">
-<div class="title--s is--green">Month 4</div>
-<div class="title--xs">Flags risk before you feel it Stalled deals surfaced before they&#x27;re gone.</div>
+<div class="title--s is--green">Passo 3</div>
+<div class="title--xs">Medição. Repetimos a medição depois de cada entrega, em horas, prazos e erros.</div>
 </div>
 <div class="sales-card">
-<div class="title--s is--green">Month 6</div>
-<div class="title--xs">Knows more than any new hire could No ramp. No knowledge gap.</div>
+<div class="title--s is--green">Passo 4</div>
+<div class="title--xs">Evolução contínua. A INTUSeg mantém e evolui a operação, como o time de tecnologia e IA da corretora.</div>
 </div>
 <div class="sales-card is--cta">
-<div class="title--s">Start today. Because in 6 months, today is what you&#x27;ll wish you&#x27;d done.</div>
-<div class="w-layout-vflex sales-card_btns"><a data-modal-open="" data-wf--button--variant="secondary-m" href="/book-a-meeting" class="button w-variant-81780053-53ab-86ef-2544-04e67f3b68aa w-inline-block">
-<div>Start Now</div>
-</a><a data-modal-open="" data-wf--button--variant="tertiary-m-white" href="/book-a-meeting" class="button w-variant-6101740f-88aa-0a0a-23a7-024ce8ee2b35 w-inline-block">
-<div>Book a demo for a Team</div>
+<div class="title--s">Comece pelo processo que mais pesa.</div>
+<div class="w-layout-vflex sales-card_btns"><a data-modal-open="cta" data-wf--button--variant="secondary-m" href="#diagnostico" class="button w-variant-81780053-53ab-86ef-2544-04e67f3b68aa w-inline-block">
+<div>Agendar o diagnóstico</div>
+</a><a data-wf--button--variant="tertiary-m-white" href="#faq" class="button w-variant-6101740f-88aa-0a0a-23a7-024ce8ee2b35 w-inline-block">
+<div>Ver as perguntas</div>
 </a></div>
 </div>
 </div>

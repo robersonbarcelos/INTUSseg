@@ -1,4 +1,4 @@
-// Conteúdo extraído de https://zig.ai/ e adaptado para a INTUSeg
+// Conteúdo da INTUSeg (estrutura de seções e animações herdadas do site de referência)
 const html = String.raw`<div class="w-layout-vflex custom_js">
 <div class="modal-logic_js w-embed w-script"></div>
 <div class="gsap w-embed w-script">

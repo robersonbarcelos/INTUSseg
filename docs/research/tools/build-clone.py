@@ -1,3 +1,4 @@
+# ATENCAO: script historico da clonagem inicial. NAO rodar: sobrescreve os componentes ja adaptados para a INTUSeg.
 """Builds the Next.js clone of zig.ai from docs/research/zig.html + zig.css.
 
 - downloads every asset (images, fonts, lottie, runtime scripts) into public/zig/

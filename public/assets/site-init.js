@@ -1,10 +1,11 @@
-window.__zigInit = function () {
+window.__siteInit = function () {
 /* inline9 */
 try {
 (() => {
 
   document.querySelectorAll('[data-modal-open]').forEach(btn => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (ev) => {
+      ev.preventDefault();
       const modalId = btn.getAttribute('data-modal-open');
       const modal = document.querySelector(`[data-modal="${modalId}"]`);
       if (!modal) return;
@@ -32,78 +33,24 @@ try {
   });
 
 })();
-} catch (e) { console.warn("zig-init inline9", e); }
+} catch (e) { console.warn("site-init inline9", e); }
 
-/* inline11 */
+/* hero: mockup do grupo de WhatsApp (substitui a animação Lottie do site de referência) */
 try {
-window.Webflow = window.Webflow || [];
-window.Webflow.push(function () {
-
-  function init() {
-    const lottieModule = Webflow.require('lottie');
-    const animations = lottieModule.lottie.getRegisteredAnimations();
-
-    if (!animations.length) {
-      setTimeout(init, 200);
-      return;
-    }
-
-    const allLotties = document.querySelectorAll('.hero_lottie');
-    const visibleEl = Array.from(allLotties).find(
-      el => getComputedStyle(el).display !== 'none'
-    );
-
-    const anim = animations.find(a => a.wrapper === visibleEl) || animations[0];
-
-    if (!anim) {
-      setTimeout(init, 200);
-      return;
-    }
-
-    anim.stop();
-
-    const proxy = { frame: 0 };
-    const t = anim.totalFrames;
-    const totalDuration = 8;
-
-    function segmentDuration(from, to) {
-      return ((to - from) / t) * totalDuration;
-    }
-
-    function playLoop() {
-      proxy.frame = 0;
-      anim.goToAndStop(0, true);
-
-      gsap.timeline()
-        .to(proxy, {
-          frame: t * 0.25,
-          duration: segmentDuration(0, t * 0.25),
-          ease: 'none',
-          onUpdate: () => anim.goToAndStop(proxy.frame, true)
-        })
-        .to(proxy, {
-          frame: t * 0.65,
-          duration: segmentDuration(t * 0.25, t * 0.65),
-          delay: 1,
-          ease: 'none',
-          onUpdate: () => anim.goToAndStop(proxy.frame, true)
-        })
-        .to(proxy, {
-          frame: t,
-          duration: segmentDuration(t * 0.65, t),
-          delay: 1,
-          ease: 'none',
-          onUpdate: () => anim.goToAndStop(proxy.frame, true),
-          onComplete: playLoop
-        });
-    }
-
-    playLoop();
-  }
-
-  init();
-});
-} catch (e) { console.warn("zig-init inline11", e); }
+  (function () {
+    const steps = [...document.querySelectorAll('.hero-chat [data-step]')];
+    if (!steps.length) return;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+    gsap.set(steps, { opacity: 0, y: 14 });
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.4 });
+    steps.forEach((el, i) => {
+      tl.to(el, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' }, i === 0 ? 0.5 : '+=1.1');
+    });
+    tl.to({}, { duration: 3.4 });
+    tl.to(steps, { opacity: 0, duration: 0.5, ease: 'power1.in' });
+  })();
+} catch (e) { console.warn('hero-chat', e); }
 
 /* inline12 */
 try {
@@ -140,7 +87,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
       },
     });
   });
-} catch (e) { console.warn("zig-init inline12", e); }
+} catch (e) { console.warn("site-init inline12", e); }
 
 /* inline13 */
 try {
@@ -182,7 +129,7 @@ try {
       });
     }).observe(watchItem, { attributes: true, attributeFilter: ['style'] });
   })();
-} catch (e) { console.warn("zig-init inline13", e); }
+} catch (e) { console.warn("site-init inline13", e); }
 
 /* inline14 */
 try {
@@ -235,7 +182,7 @@ try {
       svg.style.opacity = '1';
       elements = [];
       [
-        { el: leftEl, side: 'left', color: 'var(--_zig---colors--green-500)' },
+        { el: leftEl, side: 'left', color: 'var(--_intuseg---colors--green-500)' },
         { el: rightEl, side: 'right', color: '#87bbd9' },
       ].forEach(({ el, side, color }) => {
         const cr = el.getBoundingClientRect();
@@ -364,7 +311,7 @@ try {
       }, 150);
     });
   })();
-} catch (e) { console.warn("zig-init inline14", e); }
+} catch (e) { console.warn("site-init inline14", e); }
 
 /* inline15 */
 try {
@@ -379,29 +326,29 @@ try {
         ScrollTrigger.create({
           trigger: '.wins-animation-track',
           start: 'top center',
-          onEnter: () => (body.style.backgroundColor = 'var(--_zig---colors--black)'),
-          onLeaveBack: () => (body.style.backgroundColor = 'var(--_zig---colors--gray-50)'),
+          onEnter: () => (body.style.backgroundColor = 'var(--_intuseg---colors--black)'),
+          onLeaveBack: () => (body.style.backgroundColor = 'var(--_intuseg---colors--gray-50)'),
         });
 
         ScrollTrigger.create({
           trigger: '.steps-animation-track',
           start: 'top center',
-          onEnter: () => (body.style.backgroundColor = 'var(--_zig---colors--green-500)'),
-          onLeaveBack: () => (body.style.backgroundColor = 'var(--_zig---colors--black)'),
+          onEnter: () => (body.style.backgroundColor = 'var(--_intuseg---colors--green-500)'),
+          onLeaveBack: () => (body.style.backgroundColor = 'var(--_intuseg---colors--black)'),
         });
 
         ScrollTrigger.create({
           trigger: '.steps-section',
           start: 'bottom 50%',
-          onEnter: () => (stepsSection.style.backgroundColor = 'var(--_zig---colors--green-500)'),
+          onEnter: () => (stepsSection.style.backgroundColor = 'var(--_intuseg---colors--green-500)'),
           onLeaveBack: () => (stepsSection.style.backgroundColor = 'transparent'),
         });
 
         ScrollTrigger.create({
           trigger: '.steps-section',
           start: 'bottom 20%',
-          onEnter: () => (body.style.backgroundColor = 'var(--_zig---colors--gray-50)'),
-          onLeaveBack: () => (body.style.backgroundColor = 'var(--_zig---colors--green-500)'),
+          onEnter: () => (body.style.backgroundColor = 'var(--_intuseg---colors--gray-50)'),
+          onLeaveBack: () => (body.style.backgroundColor = 'var(--_intuseg---colors--green-500)'),
         });
 
         return () => {
@@ -417,7 +364,7 @@ try {
       ScrollTrigger.refresh();
     });
   })();
-} catch (e) { console.warn("zig-init inline15", e); }
+} catch (e) { console.warn("site-init inline15", e); }
 
 /* inline16 */
 try {
@@ -482,7 +429,7 @@ try {
       });
     });
   })();
-} catch (e) { console.warn("zig-init inline16", e); }
+} catch (e) { console.warn("site-init inline16", e); }
 
 /* inline17 */
 try {
@@ -500,7 +447,7 @@ try {
       updateOnMove: true,
     }).mount();
   })();
-} catch (e) { console.warn("zig-init inline17", e); }
+} catch (e) { console.warn("site-init inline17", e); }
 
 /* inline18 */
 try {
@@ -518,7 +465,7 @@ try {
       { passive: true },
     );
   })();
-} catch (e) { console.warn("zig-init inline18", e); }
+} catch (e) { console.warn("site-init inline18", e); }
 
 /* inline19 */
 try {
@@ -549,7 +496,45 @@ try {
 		});
 	});
 })();
-} catch (e) { console.warn("zig-init inline19", e); }
+} catch (e) { console.warn("site-init inline19", e); }
 
-try { window.__lenis = new Lenis(); function raf(t){ window.__lenis.raf(t); requestAnimationFrame(raf);} requestAnimationFrame(raf); } catch(e) { console.warn("lenis", e); }
+try { window.__lenis = new Lenis({ anchors: true }); function raf(t){ window.__lenis.raf(t); requestAnimationFrame(raf);} requestAnimationFrame(raf); } catch(e) { console.warn("lenis", e); }
 };
+
+/* formulário do diagnóstico */
+try {
+  document.querySelectorAll('[data-intuseg-form]').forEach((form) => {
+    const msg = form.querySelector('.msg');
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      const fd = new FormData(form);
+      const nome = String(fd.get('nome') || '').trim();
+      const whatsapp = String(fd.get('whatsapp') || '').trim();
+      const corretora = String(fd.get('corretora') || '').trim();
+      if (!nome || !whatsapp || !corretora) {
+        msg.className = 'msg';
+        msg.textContent = 'Preencha nome, WhatsApp e nome da corretora.';
+        return;
+      }
+      const body = {
+        nome, whatsapp, corretora,
+        sistemas: fd.getAll('sistemas'),
+        equipe: fd.get('equipe') || '',
+        renovacoes: fd.get('renovacoes') || '',
+        processos: fd.getAll('processos'),
+      };
+      msg.className = 'msg';
+      msg.textContent = 'Enviando...';
+      try {
+        const r = await fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+        if (!r.ok) throw new Error('http ' + r.status);
+        msg.className = 'msg ok';
+        msg.textContent = 'Recebemos o seu pedido. Obrigado.';
+        form.reset();
+      } catch (e) {
+        msg.className = 'msg';
+        msg.textContent = 'Não foi possível enviar agora. Tente novamente em instantes.';
+      }
+    });
+  });
+} catch (e) { console.warn('form', e); }

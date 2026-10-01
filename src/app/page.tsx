@@ -1,5 +1,5 @@
-import { Header, Hero, Logos, Pillars, Spacer, Features, ImpactTrack, WinsTrack, StepsTrack, Testimonials, Cta, Footer, Overlays } from "@/components/sections";
-import { ZigRuntime } from "@/components/ZigRuntime";
+import { Header, Hero, Logos, Pillars, Spacer, Method, Features, ImpactTrack, WinsTrack, StepsTrack, Testimonials, Proof, Cta, Footer, Overlays } from "@/components/sections";
+import { SiteRuntime } from "@/components/SiteRuntime";
 
 export default function Home() {
   return (
@@ -10,16 +10,18 @@ export default function Home() {
         <Logos />
         <Pillars />
         <Spacer />
+        <Method />
         <Features />
         <ImpactTrack />
         <WinsTrack />
         <StepsTrack />
         <Testimonials />
+        <Proof />
         <Cta />
         <Footer />
       </main>
       <Overlays />
-      <ZigRuntime />
+      <SiteRuntime />
     </div>
   );
 }

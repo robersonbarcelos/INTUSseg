@@ -1,3 +1,4 @@
+# Historico: usado so para deixar os fragmentos HTML legiveis na clonagem inicial.
 import re, json, glob, os
 BLOCK = r'(?=<(?:div|section|h[1-6]|p|ul|li|nav|main|footer|header)\b)'
 for f in glob.glob('src/components/sections/*.tsx'):

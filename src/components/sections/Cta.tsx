@@ -1,87 +1,109 @@
-// Conteúdo extraído de https://zig.ai/ e adaptado para a INTUSeg
-const html = String.raw`<section class="section main">
+// Conteúdo da INTUSeg (estrutura de seções e animações herdadas do site de referência)
+const html = String.raw`<section id="faq" class="section main">
 <div class="padding_global">
 <div class="w-layout-vflex container">
 <div class="w-layout-vflex main_grid">
 <div id="w-node-e22a8e64-76c5-ec90-dab3-4caedf46fa43-62a4fde0" class="w-layout-vflex faq_section-title">
-<h2 class="title--l">FAQ</h2>
-<div class="text--l">Something we didn&#x27;t cover? Talk to us.</div>
+<h2 class="title--l">Perguntas</h2>
+<div class="text--l">Algo que não cobrimos? Fale com a gente.</div>
 </div>
 <div id="w-node-e22a8e64-76c5-ec90-dab3-4caedf46fa48-62a4fde0" class="faq_accordion-list">
 <div class="accordion">
 <div class="accordion-control">
-<div class="title--s">I already use Salesforce, Gong, and Apollo. Do I have to give them up?</div>
+<div class="title--s">Vou ter que trocar meu sistema?</div>
 <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
 </div>
 <div class="accordion-content">
 <div class="w-layout-vflex accordion-content-text">
-<div class="text--l">No. Your assistants connect to the tools you already use — CRM, inbox, calendar, outreach platforms. Zig reads what&#x27;s there and starts working from day one. No migration, no rip-and-replace.</div>
+<div class="text--l">Não. O agente trabalha dentro do Corp, do SCORP, do Quiver ou do Aggilizador que você usa. Só recomendamos trocar quando um sistema atrapalha, e sempre com a sua aprovação.</div>
 </div>
 </div>
 </div>
 <div class="accordion">
 <div class="accordion-control">
-<div class="title--s">Can I use Zig from my phone or by voice?</div>
+<div class="title--s">A automação serve para a minha corretora ou é um pacote?</div>
 <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
 </div>
 <div class="accordion-content">
 <div class="w-layout-vflex accordion-content-text">
-<div class="text--l">Yes. The ZigMobile app lets you command your assistants from anywhere — scan a badge, send a voice update, approve an outreach sequence. Your team travels with you.</div>
+<div class="text--l">Não é pacote. O diagnóstico define quais processos automatizar, em que ordem e com quais sistemas. Duas corretoras com o mesmo gargalo podem receber automações diferentes.</div>
 </div>
 </div>
 </div>
 <div class="accordion">
 <div class="accordion-control">
-<div class="title--s">How quickly does it start doing useful work?</div>
+<div class="title--s">Como vou saber se deu resultado?</div>
 <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
 </div>
 <div class="accordion-content">
 <div class="w-layout-vflex accordion-content-text">
-<div class="text--l">Most reps see their first output — a lead list, a morning brief, or a drafted follow-up — within 24 hours of connecting their CRM. Zig compounds. The more it runs, the sharper it gets.</div>
+<div class="text--l">Medimos o ponto de partida no diagnóstico e repetimos a medição depois de cada entrega, em horas, prazos e erros.</div>
 </div>
 </div>
 </div>
 <div class="accordion">
 <div class="accordion-control">
-<div class="title--s">My reps won&#x27;t adopt another tool — and will they actually be in control?</div>
+<div class="title--s">A IA vai substituir meu corretor?</div>
 <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
 </div>
 <div class="accordion-content">
 <div class="w-layout-vflex accordion-content-text">
-<div class="text--l">They don&#x27;t have to open it, and they never lose control. Zig works through the surfaces your reps already use — email, Slack, their phone. The assistants handle the work in the background: drafting, preparing, proposing. Reps get one tap to approve before anything goes out. No new interface to learn. No risk of something sending without them knowing.</div>
+<div class="text--l">Não. Ela assume o repetitivo, como cálculo, cadastro e conferência. O relacionamento, a negociação e a venda continuam com o corretor.</div>
 </div>
 </div>
 </div>
 <div class="accordion">
 <div class="accordion-control">
-<div class="title--s">How does Zig get smarter over time?</div>
+<div class="title--s">E se o agente errar?</div>
 <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
 </div>
 <div class="accordion-content">
 <div class="w-layout-vflex accordion-content-text">
-<div class="text--l">Every call, email, and deal adds to what your assistants know about your team, your buyers, and what closes. At month 12, they know your pipeline better than a new hire could in their first year. That&#x27;s the compounding effect — and it&#x27;s yours.</div>
+<div class="text--l">Ele age dentro dos seus sistemas e dos seus dados, e cada ação fica registrada. O dono define o que o agente faz sozinho e o que precisa de aprovação.</div>
 </div>
 </div>
 </div>
 <div class="accordion">
 <div class="accordion-control">
-<div class="title--s">Who is Zig built for?</div>
+<div class="title--s">Já uso o WhatsApp. Para que preciso disso?</div>
 <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
 </div>
 <div class="accordion-content">
 <div class="w-layout-vflex accordion-content-text">
-<div class="text--l">Any rep who spends too much time on work that isn&#x27;t selling. Any leader who&#x27;s tired of pipeline reviews that don&#x27;t reflect reality. From a solo founder doing their own outreach to a VP running a team of fifty.</div>
+<div class="text--l">O WhatsApp continua sendo a tela, e o trabalho acontece nos sistemas. A equipe recebe as renovações calculadas no grupo, e o dono pergunta pelo número que precisa e recebe a resposta.</div>
 </div>
 </div>
 </div>
 <div class="accordion">
 <div class="accordion-control">
-<div class="title--s">How does Zig price — is it per seat?</div>
+<div class="title--s">Vão vigiar minha equipe?</div>
 <div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
 </div>
 <div class="accordion-content">
 <div class="w-layout-vflex accordion-content-text">
-<div class="text--l">No per-seat charges. You pre-buy a pool of executions — the work your assistants actually do. Unused executions carry forward. You pay for output, not headcount.</div>
+<div class="text--l">Medimos o tempo de resposta e o padrão de atendimento para você ajustar o processo e enxergar gargalos. Quais indicadores acompanhar é decisão sua.</div>
+</div>
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-control">
+<div class="title--s">Quanto custa?</div>
+<div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div class="accordion-content">
+<div class="w-layout-vflex accordion-content-text">
+<div class="text--l">O investimento começa pelo diagnóstico, e cada fase se justifica pelo ganho que ele aponta. Um projeto que não dá retorno não deve ser feito.</div>
+</div>
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-control">
+<div class="title--s">Meus dados ficam seguros?</div>
+<div class="accordion-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_plus"><path d="M12 5V19M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="accordion-icon_minus"><path d="M5 12H19" stroke="#15171A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+</div>
+<div class="accordion-content">
+<div class="w-layout-vflex accordion-content-text">
+<div class="text--l">A infraestrutura é da corretora, em servidor próprio, e é entregue a você se o contrato acabar.</div>
 </div>
 </div>
 </div>

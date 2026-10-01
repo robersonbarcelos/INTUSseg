@@ -11,3 +11,5 @@ export { Testimonials } from './Testimonials';
 export { Cta } from './Cta';
 export { Footer } from './Footer';
 export { Overlays } from './Overlays';
+export { Method } from './Method';
+export { Proof } from './Proof';

@@ -637,6 +637,12 @@ try {
       if (err) { msg.className = 'msg'; msg.textContent = err; return; }
       showStep(2);
     });
+    const resetDone = () => { form.classList.remove('is--done'); showStep(1); };
+    document.querySelectorAll('[data-modal-open]').forEach((b) => b.addEventListener('click', resetDone));
+    form.querySelector('[data-done-close]').addEventListener('click', () => {
+      const x = form.closest('.modal-component').querySelector('.modal__close');
+      if (x) x.click();
+    });
     form.querySelector('[data-back]').addEventListener('click', () => showStep(1));
     form.addEventListener('submit', async (ev) => {
       ev.preventDefault();
@@ -661,8 +667,7 @@ try {
         msg.textContent = 'Recebemos o seu pedido. Obrigado.';
         form.reset();
         showStep(1);
-        msg.className = 'msg ok';
-        msg.textContent = 'Recebemos o seu pedido. Obrigado.';
+        form.classList.add('is--done');
       } catch (e) {
         msg.className = 'msg';
         msg.textContent = 'Não foi possível enviar agora. Tente novamente em instantes.';

@@ -564,3 +564,8 @@
   padding: 0.875rem 1.25rem; cursor: pointer;
 }
 .intuseg-form .intuseg-back:hover { border-color: var(--_intuseg---colors--black); }
+
+/* Tela de confirmação */
+.intuseg-done { display: none; flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1rem 0; }
+.intuseg-form.is--done > :not(.intuseg-done) { display: none !important; }
+.intuseg-form.is--done .intuseg-done { display: flex; }

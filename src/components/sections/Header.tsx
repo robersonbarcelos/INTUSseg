@@ -169,6 +169,11 @@ const html = String.raw`<div class="main-css w-embed"><style>
 </div>
 </div>
 <div class="msg" role="status" aria-live="polite"></div>
+<div class="intuseg-done" role="status" aria-live="polite">
+<h3>Recebemos o seu pedido.</h3>
+<p class="lead">Nosso time vai entrar em contato no WhatsApp em até 1 dia útil para agendar o horário do diagnóstico da sua corretora.</p>
+<button type="button" class="intuseg-next" data-done-close>Fechar</button>
+</div>
 </form>
 </div>
 </div>

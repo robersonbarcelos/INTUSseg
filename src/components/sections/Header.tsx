@@ -9,7 +9,7 @@ const html = String.raw`<div class="main-css w-embed"><style>
   }
 
   .text--grad {
-    background: linear-gradient(265.26deg, #08906c 38.04%, #34bf99 94.86%);
+    background: linear-gradient(265.26deg, #07846a 38.04%, #34bf99 94.86%);
     background-clip: text;
     color: transparent;
   }
@@ -24,7 +24,7 @@ const html = String.raw`<div class="main-css w-embed"><style>
   }
 
   .footer_sn-icon:hover path {
-    fill: #08906c;
+    fill: #07846a;
   }
 
   .hubspot_form {

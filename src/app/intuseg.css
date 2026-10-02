@@ -627,3 +627,13 @@
   .hero_section { padding-bottom: 7rem; }
   .hero_section .hero-animation_wrapp { bottom: 7rem !important; height: auto !important; }
 }
+
+/* Acessibilidade: contraste mínimo 4,5:1 nos textos. Os tons mudam só o suficiente para passar (verde e coral da paleta, cinzas de apoio). */
+.hero-lottie_note,
+.intuseg-hero_proof-src,
+.intuseg-footnote {
+  color: var(--_intuseg---colors--gray-600);
+}
+.text--mono.is--grey {
+  color: var(--_intuseg---colors--gray-600);
+}

@@ -82,12 +82,12 @@ const html = String.raw`<section id="casos" class="section testimonials">
 </div>
 </div>
 <div class="slider_arrows splide__arrows splide__arrows--ltr">
-<div class="slider_arrow splide__arrow splide__arrow--prev">
+<div class="slider_arrow splide__arrow splide__arrow--prev" role="button" tabindex="0">
 <div class="arrow_icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 18" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
 <path d="M19.1621 8.64086H0.750114M8.64097 0.75L0.750114 8.64086L8.64097 16.5317" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></div>
 </div>
-<div class="slider_arrow splide__arrow splide__arrow--next">
+<div class="slider_arrow splide__arrow splide__arrow--next" role="button" tabindex="0">
 <div class="arrow_icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 18" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
 <path d="M0.75 8.64086H19.162M11.2711 0.75L19.162 8.64086L11.2711 16.5317" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></div>

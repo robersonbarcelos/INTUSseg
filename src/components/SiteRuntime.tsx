@@ -36,7 +36,7 @@ function load(src: string) {
 export function SiteRuntime() {
   useEffect(() => {
     let cancelled = false;
-    (async () => {
+    const run = async () => {
       // Splide stylesheet (original page ships it through the Webflow embed; harmless if duplicated)
       // Todos os scripts entram de uma vez: o navegador baixa em paralelo e executa na ordem da lista
       // (async=false). Antes eram baixados um depois do outro, o que atrasava a animação do hero.
@@ -51,7 +51,15 @@ export function SiteRuntime() {
       }
       (window as unknown as { __siteInit?: () => void }).__siteInit?.();
       window.dispatchEvent(new Event("load"));
-    })();
+    };
+    // A animação só começa depois da primeira pintura e quando o navegador está ocioso,
+    // para o título do hero não competir com ~1 s de JavaScript das animações.
+    const whenIdle = () => {
+      const w = window as unknown as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number };
+      if (w.requestIdleCallback) w.requestIdleCallback(() => void run(), { timeout: 2000 });
+      else setTimeout(() => void run(), 300);
+    };
+    whenIdle();
     return () => {
       cancelled = true;
     };

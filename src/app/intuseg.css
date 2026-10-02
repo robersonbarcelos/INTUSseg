@@ -380,7 +380,7 @@
 /* /v4: botão de agendar logo abaixo dos 5 cards do método */
 .method-cta {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   margin-top: 3rem;
 }
@@ -396,7 +396,7 @@
 /* Botão de agendar no fim de uma seção (converter ao longo da página) */
 .section-cta {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   margin-top: 3rem;
 }

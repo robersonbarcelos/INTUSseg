@@ -5,7 +5,7 @@ const html = String.raw`<section class="footer-section">
 <div class="w-layout-vflex container">
 <div class="w-layout-vflex footer-cta-content">
 <div class="w-layout-vflex footer-cta-title">
-<h2 class="title--l">Descubra qual processo da sua corretora paga a automação primeiro.</h2>
+<h2 class="title--l">Descubra por qual processo a automação da sua corretora deve começar.</h2>
 <div class="text--l">Uma conversa sobre seus sistemas, sua equipe e o processo que mais pesa.</div>
 </div>
 <div class="w-layout-vflex steps-btns"><a data-modal-open="cta" data-wf--button--variant="primary-m" href="#diagnostico" class="button w-inline-block">

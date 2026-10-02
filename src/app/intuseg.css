@@ -422,3 +422,10 @@
 .benefits_chips.is--red {
   background-color: rgb(194, 75, 62);
 }
+
+/* Nota de fonte em texto pequeno (estatísticas) */
+.intuseg-footnote {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--_intuseg---colors--gray-600);
+}

@@ -9,7 +9,7 @@ const html = String.raw`<div data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f933" cl
 </div>
 <div class="w-layout-vflex impact_title">
 <h2 class="title--l">Onde o tempo da corretora <span class="text--grad">se perde</span></h2></div>
-<p class="text--l">Levantamentos internos da Segura, divulgados pela Revista Apólice em 20/07/2026. Como vêm de uma empresa que vende IA para o setor, servem como ordem de grandeza.</p></div>
+<p class="text--s intuseg-footnote">*segundo levantamento divulgado pela Revista Apólice em 20/07/2026.</p></div>
 <div class="impact-list">
 <div class="impact-item is--01">
 <div class="impact-content">

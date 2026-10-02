@@ -392,3 +392,19 @@
     width: 100%;
   }
 }
+
+/* Botão de agendar no fim de uma seção (converter ao longo da página) */
+.section-cta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 479px) {
+  .section-cta {
+    margin-top: 2rem;
+  }
+  .section-cta .button {
+    width: 100%;
+  }
+}

@@ -7,7 +7,6 @@ const LIBS = [
   "https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js",
   "https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js",
   "https://cdn.jsdelivr.net/npm/lenis@latest/dist/lenis.min.js",
-  "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js",
   "/assets/jquery-3.5.1.min.dc5e7f18c8.js",
   "/assets/webflow.schunk.36b8fb49256177c8.js",
   "/assets/webflow.schunk.c42549641b7d4501.js",

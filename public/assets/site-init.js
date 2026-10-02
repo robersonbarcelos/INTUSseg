@@ -549,15 +549,36 @@ try {
     const customersSlider = document.querySelector('.testim_slider');
     if (!customersSlider) return;
 
-    new Splide(customersSlider, {
-      perPage: 1,
-      perMove: 1,
-      type: 'loop',
-      arrows: true,
-      pagination: true,
-      rewindSpeed: 400,
-      updateOnMove: true,
-    }).mount();
+    // O Splide (só usado nos depoimentos, lá embaixo) é baixado quando a seção está perto de aparecer.
+    const mount = () => {
+      if (customersSlider.dataset.mounted) return;
+      customersSlider.dataset.mounted = '1';
+      const start = () => {
+        new Splide(customersSlider, {
+          perPage: 1,
+          perMove: 1,
+          type: 'loop',
+          arrows: true,
+          pagination: true,
+          rewindSpeed: 400,
+          updateOnMove: true,
+        }).mount();
+        if (window.ScrollTrigger) ScrollTrigger.refresh();
+      };
+      if (typeof Splide !== 'undefined') return start();
+      const s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js';
+      s.onload = start;
+      document.body.appendChild(s);
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) { io.disconnect(); mount(); }
+      }, { rootMargin: '1500px 0px' });
+      io.observe(customersSlider);
+    } else {
+      mount();
+    }
   })();
 } catch (e) { console.warn("site-init inline17", e); }
 

@@ -588,3 +588,17 @@
 }
 .intuseg-form.is--done .intuseg-next { background-color: #fff; color: var(--_intuseg---colors--green-500); }
 .intuseg-form.is--done .intuseg-next:hover { background-color: var(--_intuseg---colors--black); color: #fff; }
+
+/* Card "Cadastro e conferência": dois blocos lado a lado precisam de mais largura */
+@media screen and (min-width: 992px) {
+  .built-container .built-img-03 {
+    width: 26rem;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .built-container .built-card > svg.built-img-03 {
+    width: 100%;
+    max-width: 26rem;
+  }
+}

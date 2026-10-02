@@ -8,7 +8,7 @@ const html = String.raw`<section id="medicao" class="section main-large is--bg-w
 </div>
 <h2 class="title--l">Antes de automatizar, <span class="text--grad">medimos</span></h2></div>
 <div class="spacer spacer-60"></div>
-<div class="benefits_grid">
+<div class="benefits_grid intuseg-aligned" style="--rows:5;--rows1:6">
 <div class="w-layout-vflex benefits">
 <div class="w-layout-vflex benefits_chips is--green">
 <p class="text--chips">Como medimos</p></div>
@@ -58,7 +58,7 @@ const html = String.raw`<section id="medicao" class="section main-large is--bg-w
 </div>
 </div>
 </div>
-<div class="benefits_grid">
+<div class="benefits_grid intuseg-aligned" style="--rows:3;--rows1:4">
 <div class="w-layout-vflex benefits">
 <div class="w-layout-vflex benefits_chips is--green">
 <p class="text--chips">Para quem é</p></div>

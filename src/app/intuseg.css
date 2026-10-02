@@ -434,3 +434,30 @@
 .benefit_marker:not(.is--green):not(.is--light-green) {
   border-color: rgb(194, 75, 62);
 }
+
+/* Listas lado a lado ("Sem/Com INTUSeg", medição, para quem é): cada linha da esquerda fica na mesma altura da linha
+   da direita, com os separadores alinhados. Usa subgrid; em telas estreitas as listas continuam empilhadas. */
+@media screen and (min-width: 768px) {
+  .benefits_grid.intuseg-aligned {
+    grid-template-rows: auto repeat(var(--rows), auto);
+    row-gap: 0;
+  }
+  .benefits_grid.intuseg-aligned > .benefits {
+    display: grid;
+    /* !important: o Webflow fixa a posição de cada coluna por ID (#w-node-...) */
+    grid-row: 1 / span var(--rows1) !important;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+    align-self: stretch;
+  }
+  .benefits_grid.intuseg-aligned > .benefits > .benefits_chips {
+    margin-bottom: 2.5rem;
+    justify-self: start;
+  }
+  .benefits_grid.intuseg-aligned > .benefits > .hiw-benefits_list {
+    display: grid;
+    grid-row: 2 / span var(--rows);
+    grid-template-rows: subgrid;
+    row-gap: 1.5rem;
+  }
+}

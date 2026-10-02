@@ -93,6 +93,11 @@ const html = String.raw`<section id="medicao" class="section main-large is--bg-w
 </div>
 </div>
 <p class="text--l intuseg-note">Não prometemos percentual de ganho antes do diagnóstico, porque ele depende da corretora.</p>
+<div class="section-cta">
+<a data-modal-open="cta" data-wf--button--variant="primary-m" href="#diagnostico" class="button w-inline-block">
+<div>Agendar o diagnóstico</div>
+</a>
+</div>
 </div>
 </div>
 </section>`;

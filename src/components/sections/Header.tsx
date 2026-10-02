@@ -142,9 +142,10 @@ const html = String.raw`<div class="main-css w-embed"><style>
 <fieldset><legend>Sistemas que você usa</legend>
 <div class="checks">
 <label class="chk"><input type="checkbox" name="sistemas" value="Corp"/>Corp</label>
-<label class="chk"><input type="checkbox" name="sistemas" value="SCORP"/>SCORP</label>
+<label class="chk"><input type="checkbox" name="sistemas" value="CORE"/>CORE</label>
 <label class="chk"><input type="checkbox" name="sistemas" value="Quiver"/>Quiver</label>
 <label class="chk"><input type="checkbox" name="sistemas" value="Aggilizador"/>Aggilizador</label>
+<label class="chk"><input type="checkbox" name="sistemas" value="Agger"/>Agger</label>
 <label class="chk"><input type="checkbox" name="sistemas" value="Segfy"/>Segfy</label>
 <label class="chk"><input type="checkbox" name="sistemas" value="Outro"/>Outro</label>
 </div></fieldset>

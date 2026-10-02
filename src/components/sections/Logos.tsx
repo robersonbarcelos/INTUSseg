@@ -55,7 +55,7 @@ const html = String.raw`<section class="section main-large is--bg-white">
 </div>
 <div class="w-layout-vflex benefits_item is--last">
 <div class="benefit_marker is--green"><img src="/assets/6a2ae1aa394b8dfaeee438b2_Check_Icon.svg" loading="lazy" alt="" class="icon_14px"/></div>
-<div class="title--xs is--green">Cada ação fica registrada, e o ganho é medido em horas e em erros.</div>
+<div class="title--xs is--green">Cada ação fica registrada, e o ganho é medido em horas e em erros evitados.</div>
 </div>
 </div>
 </div>

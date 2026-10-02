@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // CSS dentro do HTML: tira a requisição que bloqueava a primeira pintura
+  experimental: { inlineCss: true },
   // "standalone" é para o Docker; na Vercel ele quebra o rastreamento de arquivos (ENOENT .nft.json)
   output: process.env.VERCEL ? undefined : "standalone",
   // Apelidos para as duas versões: /index e /indexv4 abrem a mesma coisa que / e /v4

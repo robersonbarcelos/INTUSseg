@@ -21,7 +21,7 @@ function load(src: string) {
     if (document.querySelector(`script[data-site="${src}"]`)) return resolve();
     const s = document.createElement("script");
     s.src = src;
-    s.async = false;
+    s.async = false; // preserva a ordem de execução mesmo com o download em paralelo
     s.dataset.site = src;
     s.onload = () => resolve();
     s.onerror = () => {
@@ -38,10 +38,10 @@ export function SiteRuntime() {
     let cancelled = false;
     (async () => {
       // Splide stylesheet (original page ships it through the Webflow embed; harmless if duplicated)
-      for (const src of LIBS) {
-        if (cancelled) return;
-        await load(src);
-      }
+      // Todos os scripts entram de uma vez: o navegador baixa em paralelo e executa na ordem da lista
+      // (async=false). Antes eram baixados um depois do outro, o que atrasava a animação do hero.
+      if (cancelled) return;
+      await Promise.all(LIBS.map(load));
       // Webflow's lottie module already missed DOM-ready when loaded after hydration: init it explicitly.
       try {
         const wf = (window as unknown as { Webflow?: { require: (m: string) => { init?: () => void } } }).Webflow;

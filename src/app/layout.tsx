@@ -24,6 +24,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       className="w-mod-js"
       suppressHydrationWarning
     >
+      <head>
+        <link rel="preload" href="/assets/697c82732f64b42254faa88a_Archivo-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/assets/697c827386b2e8debee888ac_Archivo-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+      </head>
       <body data-w-id="697c82adb518a76f62a4fde6" suppressHydrationWarning>
         {children}
       </body>

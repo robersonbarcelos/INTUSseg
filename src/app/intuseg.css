@@ -376,3 +376,19 @@
 .steps-animation-wrapp.is--no-steps .sales-cards {
   opacity: 1 !important;
 }
+
+/* /v4: botão de agendar logo abaixo dos 5 cards do método */
+.method-cta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 479px) {
+  .method-cta {
+    margin-top: 2rem;
+  }
+  .method-cta .button {
+    width: 100%;
+  }
+}

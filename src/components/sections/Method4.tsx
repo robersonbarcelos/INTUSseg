@@ -42,6 +42,11 @@ const html = String.raw`<section id="metodo" class="section main-large intuseg-m
 <p class="text--m">Medimos ganhos e expandimos a automação para outros processos.</p></div>
 </div>
 </div>
+<div class="method-cta">
+<a data-modal-open="cta" data-wf--button--variant="primary-m" href="#diagnostico" class="button w-inline-block">
+<div>Agendar o diagnóstico</div>
+</a>
+</div>
 </div>
 </div>
 </section>`;

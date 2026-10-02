@@ -609,3 +609,21 @@
     min-height: 82rem;
   }
 }
+
+/* Estatística do hero: no celular sai do meio do conteúdo e vai para baixo da animação, para não competir com ela */
+.intuseg-hero_proof.is--after { display: none; }
+@media screen and (max-width: 479px) {
+  .intuseg-hero_proof.is--inline { display: none; }
+  .intuseg-hero_proof.is--after {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    max-width: none;
+    text-align: center;
+  }
+  .hero_section { padding-bottom: 7rem; }
+  .hero_section .hero-animation_wrapp { bottom: 7rem !important; height: auto !important; }
+}

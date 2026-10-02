@@ -17,7 +17,7 @@ const html = String.raw`<section id="topo" class="section hero_section">
 </a><a data-wf--button--variant="tertiary-m" href="#metodo" class="button w-variant-8ab93cf4-d629-81e6-e7fb-0245c8a1d5ff w-inline-block">
 <div>Ver como o método funciona</div>
 </a></div>
-<p class="text--s intuseg-hero_proof">De 20% a 35% da rotina de um corretor vai para tarefas administrativas.<span class="intuseg-hero_proof-src">*segundo levantamento divulgado pela Revista Apólice em 20/07/2026.</span></p>
+<p class="text--s intuseg-hero_proof is--inline">De 20% a 35% da rotina de um corretor vai para tarefas administrativas.<span class="intuseg-hero_proof-src">*segundo levantamento divulgado pela Revista Apólice em 20/07/2026.</span></p>
 </div>
 <div class="hero-animation_wrapp">
 <div class="hero_lottie _1280" data-w-id="e22a8e64-76c5-ec90-dab3-4caedf46f890" data-animation-type="lottie" data-src="/assets/hero-2500.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="0" data-duration="8" data-loading="lazy"></div>
@@ -31,6 +31,7 @@ const html = String.raw`<section id="topo" class="section hero_section">
 </div>
 </div>
 </div>
+<p class="text--s intuseg-hero_proof is--after">De 20% a 35% da rotina de um corretor vai para tarefas administrativas.<span class="intuseg-hero_proof-src">*segundo levantamento divulgado pela Revista Apólice em 20/07/2026.</span></p>
 </section>`;
 
 export function Hero() {

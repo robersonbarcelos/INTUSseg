@@ -25,6 +25,9 @@ export async function POST(req: Request) {
   if (!lead.nome || !lead.whatsapp || !lead.email || !lead.corretora) {
     return NextResponse.json({ ok: false }, { status: 422 });
   }
+  if (!lead.sistemas.length || !lead.equipe || !lead.renovacoes || !lead.processos.length) {
+    return NextResponse.json({ ok: false }, { status: 422 });
+  }
   console.log("[intuseg-lead]", JSON.stringify(lead));
   return NextResponse.json({ ok: true });
 }

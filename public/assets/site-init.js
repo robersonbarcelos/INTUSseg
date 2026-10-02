@@ -643,11 +643,27 @@ try {
       const x = form.closest('.modal-component').querySelector('.modal__close');
       if (x) x.click();
     });
+    const step2Error = () => {
+      const fd = new FormData(form);
+      const miss = [];
+      form.querySelectorAll('.intuseg-step[data-step="2"] .is--missing').forEach((el) => el.classList.remove('is--missing'));
+      const flag = (sel) => { const el = form.querySelector(sel); if (el) el.classList.add('is--missing'); };
+      if (!fd.getAll('sistemas').length) { miss.push('sistemas'); flag('fieldset[data-group="sistemas"]'); }
+      if (!fd.get('equipe')) { miss.push('equipe'); flag('label[data-field="equipe"]'); }
+      if (!fd.get('renovacoes')) { miss.push('renovacoes'); flag('label[data-field="renovacoes"]'); }
+      if (!fd.getAll('processos').length) { miss.push('processos'); flag('fieldset[data-group="processos"]'); }
+      return miss.length ? 'Marque ao menos uma opção em cada bloco para continuar.' : '';
+    };
+    form.querySelector('.intuseg-step[data-step="2"]').addEventListener('change', () => {
+      if (form.querySelector('.is--missing')) { const e = step2Error(); msg.className = 'msg'; msg.textContent = e; }
+    });
     form.querySelector('[data-back]').addEventListener('click', () => showStep(1));
     form.addEventListener('submit', async (ev) => {
       ev.preventDefault();
       const err = step1Error();
       if (err) { showStep(1); msg.textContent = err; return; }
+      const err2 = step2Error();
+      if (err2) { msg.className = 'msg is--error'; msg.textContent = err2; return; }
       const fd = new FormData(form);
       const v = (k) => String(fd.get(k) || '').trim();
       const body = {

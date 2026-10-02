@@ -569,3 +569,22 @@
 .intuseg-done { display: none; flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1rem 0; }
 .intuseg-form.is--done > :not(.intuseg-done) { display: none !important; }
 .intuseg-form.is--done .intuseg-done { display: flex; }
+
+/* Validação da tela 2 */
+.intuseg-form .is--missing > legend,
+.intuseg-form label.is--missing { color: var(--_intuseg---colors--coral-500); }
+.intuseg-form fieldset.is--missing { outline: 1px solid var(--_intuseg---colors--coral-500); outline-offset: 6px; border-radius: 0.5rem; }
+.intuseg-form label.is--missing select { border-color: var(--_intuseg---colors--coral-500); }
+.intuseg-form .msg.is--error { color: var(--_intuseg---colors--coral-500); }
+
+/* Confirmação: painel verde */
+.modal-component .modal_wrapp:has(.intuseg-form.is--done) { background-color: var(--_intuseg---colors--green-500); }
+.intuseg-form.is--done .intuseg-done h3,
+.intuseg-form.is--done .intuseg-done p.lead { color: #fff; }
+.intuseg-done_check {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 3.5rem; height: 3.5rem; border-radius: 50%;
+  background: #fff; color: var(--_intuseg---colors--green-500);
+}
+.intuseg-form.is--done .intuseg-next { background-color: #fff; color: var(--_intuseg---colors--green-500); }
+.intuseg-form.is--done .intuseg-next:hover { background-color: var(--_intuseg---colors--black); color: #fff; }

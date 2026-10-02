@@ -139,7 +139,7 @@ const html = String.raw`<div class="main-css w-embed"><style>
 <button type="button" class="intuseg-next" data-next>Continuar <span aria-hidden="true">&rarr;</span></button>
 </div>
 <div class="intuseg-step" data-step="2">
-<fieldset><legend>Sistemas que você usa</legend>
+<fieldset data-group="sistemas"><legend>Sistemas que você usa</legend>
 <div class="checks">
 <label class="chk"><input type="checkbox" name="sistemas" value="Corp"/>Corp</label>
 <label class="chk"><input type="checkbox" name="sistemas" value="CORE"/>CORE</label>
@@ -150,10 +150,10 @@ const html = String.raw`<div class="main-css w-embed"><style>
 <label class="chk"><input type="checkbox" name="sistemas" value="Outro"/>Outro</label>
 </div></fieldset>
 <div class="row">
-<label>Tamanho da equipe<select name="equipe"><option value="">Selecione</option><option>1</option><option>2 a 3</option><option>4 a 10</option><option>11 ou mais</option></select></label>
-<label>Renovações por mês (aprox.)<select name="renovacoes"><option value="">Selecione</option><option>Até 50</option><option>51 a 200</option><option>201 a 500</option><option>Mais de 500</option></select></label>
+<label data-field="equipe">Tamanho da equipe<select name="equipe"><option value="">Selecione</option><option>1</option><option>2 a 3</option><option>4 a 10</option><option>11 ou mais</option></select></label>
+<label data-field="renovacoes">Renovações por mês (aprox.)<select name="renovacoes"><option value="">Selecione</option><option>Até 50</option><option>51 a 200</option><option>201 a 500</option><option>Mais de 500</option></select></label>
 </div>
-<fieldset><legend>Qual processo mais pesa hoje?</legend>
+<fieldset data-group="processos"><legend>Qual processo mais pesa hoje?</legend>
 <div class="checks">
 <label class="chk"><input type="checkbox" name="processos" value="Renovação"/>Renovação</label>
 <label class="chk"><input type="checkbox" name="processos" value="Cotação"/>Cotação</label>
@@ -170,6 +170,7 @@ const html = String.raw`<div class="main-css w-embed"><style>
 </div>
 <div class="msg" role="status" aria-live="polite"></div>
 <div class="intuseg-done" role="status" aria-live="polite">
+<span class="intuseg-done_check" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
 <h3>Recebemos o seu pedido.</h3>
 <p class="lead">Nosso time vai entrar em contato no WhatsApp em até 1 dia útil para agendar o horário do diagnóstico da sua corretora.</p>
 <button type="button" class="intuseg-next" data-done-close>Fechar</button>

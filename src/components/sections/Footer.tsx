@@ -25,7 +25,7 @@ const html = String.raw`<section class="footer-section">
 <div class="footer_container-grid">
 <div id="w-node-dfeb8a6f-3d27-8a65-53e0-41b223156485-23156472" class="w-layout-vflex footer-logo_wrapp"><a href="#topo" aria-current="page" class="footer_logo w-inline-block w--current"><span class="intuseg-logo is--footer">INTUSeg</span></a>
 <div class="text--s is--green--200">Inteligência digital para corretoras de seguros</div>
-<div class="text--s is--green--200">© 2026 INTUSeg. Todos os direitos reservados.</div>
+<div class="text--s is--green--200">© 2026 INTUS HUB. Todos os direitos reservados.</div>
 </div>
 <div class="w-layout-vflex footer_column-links">
 <div class="w-layout-vflex footer_links-list"><a href="#metodo" class="text--link is--white">Método</a><a href="#processos" class="text--link is--white">Processos</a><a href="#casos" class="text--link is--white">Casos</a></div>

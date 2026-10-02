@@ -44,7 +44,7 @@ const html = String.raw`<section class="section main-large is--bg-white">
 <div class="w-layout-vflex benefits_item">
 <div class="benefit_marker is--green"><img src="/assets/6a2ae1aa394b8dfaeee438b2_Check_Icon.svg" loading="lazy" alt="" class="icon_14px"/></div>
 <div class="w-layout-vflex benefit_text">
-<div class="title--xs is--green">O multicálculo roda sozinho, dentro dos sistemas que você já usa.</div>
+<div class="title--xs is--green">O multicálculo roda sozinho antes mesmo de você acordar.</div>
 </div>
 </div>
 <div class="w-layout-vflex benefits_item">

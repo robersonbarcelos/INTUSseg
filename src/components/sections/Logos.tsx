@@ -10,8 +10,8 @@ const html = String.raw`<section class="section main-large is--bg-white">
 <div class="spacer spacer-60"></div>
 <div class="benefits_grid">
 <div id="w-node-e22a8e64-76c5-ec90-dab3-4caedf46f8a2-62a4fde0" class="w-layout-vflex benefits">
-<div class="w-layout-vflex benefits_chips">
-<p class="text--chips">Hoje</p></div>
+<div class="w-layout-vflex benefits_chips is--red">
+<p class="text--chips">Sem INTUSeg</p></div>
 <div class="hiw-benefits_list">
 <div class="w-layout-vflex benefits_item">
 <div class="benefit_marker"><img src="/assets/6a2ae1aa14a73969a4f78b24_Close_Icon.svg" loading="lazy" alt="" class="icon_14px"/></div>

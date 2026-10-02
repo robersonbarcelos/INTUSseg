@@ -602,3 +602,10 @@
     max-width: 26rem;
   }
 }
+
+/* Hero no celular: a copy em português é mais longa que a original, então a animação desce para ficar abaixo do conteúdo */
+@media screen and (max-width: 479px) {
+  .hero_container-new {
+    min-height: 82rem;
+  }
+}

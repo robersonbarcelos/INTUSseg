@@ -6,7 +6,7 @@ const html = String.raw`<section id="topo" class="section hero_section">
 <div class="w-layout-vflex hero_component-new">
 <div class="hero_content-new">
 <div data-wf--section-chips--variant="base" class="section_chips"><img loading="lazy" src="/assets/6a2ade093d4ed3f8ed40f59a_b02bd53e80ae3ff609dc26af780b742d_Icon.svg" alt="" class="icon_chips"/>
-<div>Automação com IA para corretoras de seguros</div>
+<div>Automação e Agentes de IA para corretoras de seguros</div>
 </div>
 <h1 class="title--xl intuseg-h1">Mostre o processo mais manual da sua corretora.<br/><span class="text--grad">A automação é desenhada em cima dele.</span></h1>
 <div class="w-layout-vflex hero__description-new">

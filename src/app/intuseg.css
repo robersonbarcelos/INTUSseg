@@ -528,3 +528,16 @@
     max-width: 17rem;
   }
 }
+
+/* Card "Documentos e apólices": o texto da solução ficou com 3 linhas; a ilustração diminui para ter folga */
+@media screen and (min-width: 992px) {
+  .built-container .built-img-04 {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .built-container .built-card > svg.built-img-04 {
+    max-width: 30rem;
+  }
+}

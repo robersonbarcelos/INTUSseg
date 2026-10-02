@@ -167,6 +167,7 @@
 }
 .intuseg-form input[type="text"],
 .intuseg-form input[type="tel"],
+.intuseg-form input[type="email"],
 .intuseg-form select {
   font-family: inherit;
   font-size: 1rem;
@@ -541,3 +542,25 @@
     max-width: 30rem;
   }
 }
+
+/* Formulário em 2 telas */
+.intuseg-step { display: none; flex-direction: column; gap: 1rem; }
+.intuseg-step.is--active { display: flex; }
+.intuseg-steps { display: flex; gap: 0.5rem; }
+.intuseg-steps span { flex: 1; height: 4px; border-radius: 4px; background: var(--_intuseg---colors--gray-200); transition: background-color .3s; }
+.intuseg-steps span.is--on { background: var(--_intuseg---colors--coral-500); }
+.intuseg-form .intuseg-next {
+  font-family: inherit; font-size: 1rem; font-weight: 500; color: var(--_intuseg---colors--white);
+  background-color: var(--_intuseg---colors--coral-500); border: 0; border-radius: 5rem;
+  padding: 0.875rem 1.5rem; cursor: pointer; transition: background-color 0.2s;
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.intuseg-form .intuseg-next:hover { background-color: var(--_intuseg---colors--black); }
+.intuseg-actions { display: flex; gap: 0.75rem; align-items: stretch; }
+.intuseg-actions button[type="submit"] { flex: 1; }
+.intuseg-form .intuseg-back {
+  font-family: inherit; font-size: 1rem; font-weight: 500; color: var(--_intuseg---colors--black);
+  background: transparent; border: 1px solid var(--_intuseg---colors--gray-200); border-radius: 5rem;
+  padding: 0.875rem 1.25rem; cursor: pointer;
+}
+.intuseg-form .intuseg-back:hover { border-color: var(--_intuseg---colors--black); }

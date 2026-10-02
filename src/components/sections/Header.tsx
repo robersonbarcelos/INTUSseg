@@ -127,11 +127,18 @@ const html = String.raw`<div class="main-css w-embed"><style>
 <form class="intuseg-form" data-intuseg-form novalidate>
 <h3>Agendar o diagnóstico operacional</h3>
 <p class="lead">Uma conversa sobre seus sistemas, sua equipe e o processo que mais pesa.</p>
+<div class="intuseg-steps" aria-hidden="true"><span class="is--on"></span><span></span></div>
+<div class="intuseg-step is--active" data-step="1">
 <div class="row">
 <label>Nome<input type="text" name="nome" required autocomplete="name"/></label>
 <label>WhatsApp<input type="tel" name="whatsapp" required autocomplete="tel"/></label>
 </div>
+<label>E-mail<input type="email" name="email" required autocomplete="email"/></label>
 <label>Nome da corretora<input type="text" name="corretora" required autocomplete="organization"/></label>
+<label>Instagram ou site da corretora<input type="text" name="presenca" placeholder="@suacorretora ou www.suacorretora.com.br" autocomplete="off"/></label>
+<button type="button" class="intuseg-next" data-next>Continuar <span aria-hidden="true">&rarr;</span></button>
+</div>
+<div class="intuseg-step" data-step="2">
 <fieldset><legend>Sistemas que você usa</legend>
 <div class="checks">
 <label class="chk"><input type="checkbox" name="sistemas" value="Corp"/>Corp</label>
@@ -155,7 +162,11 @@ const html = String.raw`<div class="main-css w-embed"><style>
 <label class="chk"><input type="checkbox" name="processos" value="Equipe e acompanhamento"/>Equipe e acompanhamento</label>
 <label class="chk"><input type="checkbox" name="processos" value="Outro"/>Outro</label>
 </div></fieldset>
-<button type="submit">Agendar o diagnóstico operacional</button>
+<div class="intuseg-actions">
+<button type="button" class="intuseg-back" data-back><span aria-hidden="true">&larr;</span> Voltar</button>
+<button type="submit">Agendar o diagnóstico</button>
+</div>
+</div>
 <div class="msg" role="status" aria-live="polite"></div>
 </form>
 </div>

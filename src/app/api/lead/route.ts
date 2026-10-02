@@ -14,13 +14,15 @@ export async function POST(req: Request) {
   const lead = {
     nome: text(data.nome),
     whatsapp: text(data.whatsapp),
+    email: text(data.email),
     corretora: text(data.corretora),
+    presenca: text(data.presenca),
     sistemas: list(data.sistemas),
     equipe: text(data.equipe),
     renovacoes: text(data.renovacoes),
     processos: list(data.processos),
   };
-  if (!lead.nome || !lead.whatsapp || !lead.corretora) {
+  if (!lead.nome || !lead.whatsapp || !lead.email || !lead.corretora) {
     return NextResponse.json({ ok: false }, { status: 422 });
   }
   console.log("[intuseg-lead]", JSON.stringify(lead));

@@ -617,19 +617,36 @@ try { window.__lenis = new Lenis({ anchors: true }); function raf(t){ window.__l
 try {
   document.querySelectorAll('[data-intuseg-form]').forEach((form) => {
     const msg = form.querySelector('.msg');
+    const steps = form.querySelectorAll('.intuseg-step');
+    const dots = form.querySelectorAll('.intuseg-steps span');
+    const showStep = (n) => {
+      steps.forEach((el) => el.classList.toggle('is--active', el.dataset.step === String(n)));
+      dots.forEach((d, i) => d.classList.toggle('is--on', i < n));
+      msg.className = 'msg'; msg.textContent = '';
+      const w = form.closest('.modal_wrapp'); if (w) w.scrollTop = 0;
+    };
+    const step1Error = () => {
+      const fd = new FormData(form);
+      const v = (k) => String(fd.get(k) || '').trim();
+      if (!v('nome') || !v('whatsapp') || !v('email') || !v('corretora')) return 'Preencha nome, WhatsApp, e-mail e nome da corretora.';
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('email'))) return 'Confira o e-mail digitado.';
+      return '';
+    };
+    form.querySelector('[data-next]').addEventListener('click', () => {
+      const err = step1Error();
+      if (err) { msg.className = 'msg'; msg.textContent = err; return; }
+      showStep(2);
+    });
+    form.querySelector('[data-back]').addEventListener('click', () => showStep(1));
     form.addEventListener('submit', async (ev) => {
       ev.preventDefault();
+      const err = step1Error();
+      if (err) { showStep(1); msg.textContent = err; return; }
       const fd = new FormData(form);
-      const nome = String(fd.get('nome') || '').trim();
-      const whatsapp = String(fd.get('whatsapp') || '').trim();
-      const corretora = String(fd.get('corretora') || '').trim();
-      if (!nome || !whatsapp || !corretora) {
-        msg.className = 'msg';
-        msg.textContent = 'Preencha nome, WhatsApp e nome da corretora.';
-        return;
-      }
+      const v = (k) => String(fd.get(k) || '').trim();
       const body = {
-        nome, whatsapp, corretora,
+        nome: v('nome'), whatsapp: v('whatsapp'), email: v('email'),
+        corretora: v('corretora'), presenca: v('presenca'),
         sistemas: fd.getAll('sistemas'),
         equipe: fd.get('equipe') || '',
         renovacoes: fd.get('renovacoes') || '',
@@ -643,6 +660,9 @@ try {
         msg.className = 'msg ok';
         msg.textContent = 'Recebemos o seu pedido. Obrigado.';
         form.reset();
+        showStep(1);
+        msg.className = 'msg ok';
+        msg.textContent = 'Recebemos o seu pedido. Obrigado.';
       } catch (e) {
         msg.className = 'msg';
         msg.textContent = 'Não foi possível enviar agora. Tente novamente em instantes.';

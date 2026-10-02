@@ -429,3 +429,8 @@
   line-height: 1.4;
   color: var(--_intuseg---colors--gray-600);
 }
+
+/* Marcadores "X" (Sem INTUSeg, Para quem ainda não é): círculo e X no vermelho da paleta */
+.benefit_marker:not(.is--green):not(.is--light-green) {
+  border-color: rgb(194, 75, 62);
+}

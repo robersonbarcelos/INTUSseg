@@ -82,11 +82,11 @@ const html = String.raw`<section id="medicao" class="section main-large is--bg-w
 <p class="text--chips">Para quem ainda não é</p></div>
 <div class="hiw-benefits_list">
 <div class="w-layout-vflex benefits_item">
-<div class="benefit_marker"><img src="/assets/6a2ae1aa14a73969a4f78b24_Close_Icon.svg" loading="lazy" alt="" class="icon_14px"/></div>
+<div class="benefit_marker"><img src="/assets/close-icon-red.svg" loading="lazy" alt="" class="icon_14px"/></div>
 <div class="title--xs">O corretor que trabalha sozinho e busca uma ferramenta pronta e gratuita.</div>
 </div>
 <div class="w-layout-vflex benefits_item is--last">
-<div class="benefit_marker"><img src="/assets/6a2ae1aa14a73969a4f78b24_Close_Icon.svg" loading="lazy" alt="" class="icon_14px"/></div>
+<div class="benefit_marker"><img src="/assets/close-icon-red.svg" loading="lazy" alt="" class="icon_14px"/></div>
 <div class="title--xs">Para esse perfil existem plataformas padronizadas que atendem bem.</div>
 </div>
 </div>

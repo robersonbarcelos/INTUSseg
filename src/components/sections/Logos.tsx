@@ -14,19 +14,19 @@ const html = String.raw`<section class="section main-large is--bg-white">
 <p class="text--chips">Sem INTUSeg</p></div>
 <div class="hiw-benefits_list">
 <div class="w-layout-vflex benefits_item">
-<div class="benefit_marker"><img src="/assets/6a2ae1aa14a73969a4f78b24_Close_Icon.svg" loading="lazy" alt="" class="icon_14px"/></div>
+<div class="benefit_marker"><img src="/assets/close-icon-red.svg" loading="lazy" alt="" class="icon_14px"/></div>
 <div class="title--xs">Alguém da equipe abre o multicálculo, o sistema de gestão e a planilha só para saber o que vence nos próximos 30 dias.</div>
 </div>
 <div class="w-layout-vflex benefits_item">
-<div class="benefit_marker"><img src="/assets/6a2ae1aa14a73969a4f78b24_Close_Icon.svg" loading="lazy" alt="" class="icon_14px"/></div>
+<div class="benefit_marker"><img src="/assets/close-icon-red.svg" loading="lazy" alt="" class="icon_14px"/></div>
 <div class="title--xs">O vencimento depende da memória de quem cuida da carteira.<br/></div>
 </div>
 <div class="w-layout-vflex benefits_item">
-<div class="benefit_marker"><img src="/assets/6a2ae1aa14a73969a4f78b24_Close_Icon.svg" loading="lazy" alt="" class="icon_14px"/></div>
+<div class="benefit_marker"><img src="/assets/close-icon-red.svg" loading="lazy" alt="" class="icon_14px"/></div>
 <div class="title--xs">O cálculo é refeito apólice por apólice, em um portal de seguradora depois do outro.<br/></div>
 </div>
 <div class="w-layout-vflex benefits_item is--last">
-<div class="benefit_marker"><img src="/assets/6a2ae1aa14a73969a4f78b24_Close_Icon.svg" loading="lazy" alt="" class="icon_14px"/></div>
+<div class="benefit_marker"><img src="/assets/close-icon-red.svg" loading="lazy" alt="" class="icon_14px"/></div>
 <div class="title--xs">O dono abre vários sistemas para descobrir como está o dia.<br/></div>
 </div>
 </div>

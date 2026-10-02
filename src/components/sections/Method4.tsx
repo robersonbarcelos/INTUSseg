@@ -27,19 +27,19 @@ const html = String.raw`<section id="metodo" class="section main-large intuseg-m
 <div class="built-card-content">
 <div class="text--mono opacity-60">/ 03</div>
 <div class="title--m">Piloto</div>
-<p class="text--m">Automatizamos um processo importante e validamos o resultado na operação real.</p></div>
+<p class="text--m">Começamos pelo processo prioritário. Conectamos sistemas, dados, agentes e canais da equipe e validamos na operação real.</p></div>
 </div>
 <div class="built-card method-card is--evo-2">
 <div class="built-card-content">
 <div class="text--mono opacity-60">/ 04</div>
 <div class="title--m">Implantação</div>
-<p class="text--m">Conectamos sistemas, dados, agentes e canais utilizados pela equipe.</p></div>
+<p class="text--m">Com o primeiro piloto aprovado, expandimos a automação para os outros processos da corretora, um de cada vez.</p></div>
 </div>
 <div class="built-card method-card is--accent-green">
 <div class="built-card-content">
 <div class="text--mono opacity-60">/ 05</div>
 <div class="title--m">Evolução</div>
-<p class="text--m">Medimos ganhos e expandimos a automação para outros processos.</p></div>
+<p class="text--m">Analisamos e medimos os resultados e os processos melhorados com a automação.</p></div>
 </div>
 </div>
 <div class="method-cta">

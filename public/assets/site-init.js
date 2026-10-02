@@ -425,26 +425,36 @@ try {
           onLeaveBack: () => (body.style.backgroundColor = 'var(--_intuseg---colors--gray-50)'),
         });
 
-        ScrollTrigger.create({
-          trigger: '.steps-animation-track',
-          start: 'top center',
-          onEnter: () => (body.style.backgroundColor = 'var(--_intuseg---colors--green-500)'),
-          onLeaveBack: () => (body.style.backgroundColor = 'var(--_intuseg---colors--black)'),
-        });
+        if (stepsSection) {
+          ScrollTrigger.create({
+            trigger: '.steps-animation-track',
+            start: 'top center',
+            onEnter: () => (body.style.backgroundColor = 'var(--_intuseg---colors--green-500)'),
+            onLeaveBack: () => (body.style.backgroundColor = 'var(--_intuseg---colors--black)'),
+          });
 
-        ScrollTrigger.create({
-          trigger: '.steps-section',
-          start: 'bottom 50%',
-          onEnter: () => (stepsSection.style.backgroundColor = 'var(--_intuseg---colors--green-500)'),
-          onLeaveBack: () => (stepsSection.style.backgroundColor = 'transparent'),
-        });
+          ScrollTrigger.create({
+            trigger: '.steps-section',
+            start: 'bottom 50%',
+            onEnter: () => (stepsSection.style.backgroundColor = 'var(--_intuseg---colors--green-500)'),
+            onLeaveBack: () => (stepsSection.style.backgroundColor = 'transparent'),
+          });
 
-        ScrollTrigger.create({
-          trigger: '.steps-section',
-          start: 'bottom 20%',
-          onEnter: () => (body.style.backgroundColor = 'var(--_intuseg---colors--gray-50)'),
-          onLeaveBack: () => (body.style.backgroundColor = 'var(--_intuseg---colors--green-500)'),
-        });
+          ScrollTrigger.create({
+            trigger: '.steps-section',
+            start: 'bottom 20%',
+            onEnter: () => (body.style.backgroundColor = 'var(--_intuseg---colors--gray-50)'),
+            onLeaveBack: () => (body.style.backgroundColor = 'var(--_intuseg---colors--green-500)'),
+          });
+        } else if (document.querySelector('.sales-animation-track')) {
+          // INTUSeg (/v4): sem o bloco verde dos passos, o fundo volta ao claro quando a seção "Como começa" chega
+          ScrollTrigger.create({
+            trigger: '.sales-animation-track',
+            start: 'top center',
+            onEnter: () => (body.style.backgroundColor = 'var(--_intuseg---colors--gray-50)'),
+            onLeaveBack: () => (body.style.backgroundColor = 'var(--_intuseg---colors--black)'),
+          });
+        }
 
         return () => {
           body.style.backgroundColor = '';
@@ -516,7 +526,14 @@ try {
         ease: 'none',
         scrollTrigger: {
           trigger: wrap,
-          start: '50% top-=200',
+          start: (function () {
+            if (document.querySelector('.steps-animation-track')) return '50% top-=200';
+            // sem a trilha dos passos (250vh) o início equivalente é medido a partir do topo da trilha da roda
+            const S = 2.5 * window.innerHeight;
+            const T = wrap.offsetHeight;
+            const X = Math.round((T - S) / 2 + 200);
+            return 'top top' + (X >= 0 ? '-=' + X : '+=' + -X);
+          })(),
           end: 'bottom bottom-=400',
           scrub: true,
           onUpdate: (self) => tick(self.progress * totalRotation),

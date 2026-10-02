@@ -17,3 +17,4 @@ export { Hero4 } from './Hero4';
 export { Pillars4 } from './Pillars4';
 export { Identification4 } from './Identification4';
 export { Method4 } from './Method4';
+export { StepsTrack4 } from './StepsTrack4';

@@ -370,3 +370,9 @@
 .modal-component .modal_wrapp {
   overscroll-behavior: contain;
 }
+
+/* /v4: sem o bloco verde dos passos, a interação do Webflow que revelava o título e os cards de "Como começa" não dispara mais; eles ficam sempre visíveis */
+.steps-animation-wrapp.is--no-steps .sales-section_heading,
+.steps-animation-wrapp.is--no-steps .sales-cards {
+  opacity: 1 !important;
+}

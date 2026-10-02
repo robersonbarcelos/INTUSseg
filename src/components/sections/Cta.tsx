@@ -15,7 +15,7 @@ const html = String.raw`<section id="faq" class="section main">
 </div>
 <div class="accordion-content">
 <div class="w-layout-vflex accordion-content-text">
-<div class="text--l">Não. O agente trabalha dentro do Corp, do SCORP, do Quiver ou do Aggilizador que você usa. Só recomendamos trocar quando um sistema atrapalha, e sempre com a sua aprovação.</div>
+<div class="text--l">Não. O agente trabalha dentro do Corp, do CORE, do Quiver, do Aggilizador ou do Agger que você usa. Só recomendamos trocar quando um sistema atrapalha, e sempre com a sua aprovação.</div>
 </div>
 </div>
 </div>

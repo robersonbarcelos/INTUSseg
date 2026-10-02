@@ -7,7 +7,7 @@ const html = String.raw`<section class="section main-large intuseg-ident">
 <div>O gargalo</div>
 </div>
 <p class="title--m intuseg-ident_lead">Quando a operação só funciona porque duas pessoas sabem onde está cada informação, entre a planilha, o WhatsApp e três sistemas, o gargalo está na falta de integração, e não no esforço da equipe.</p>
-<p class="text--l intuseg-ident_value">A INTUSeg transforma processos repetitivos em fluxos automatizados, leva a informação certa ao dono pelo WhatsApp ou Telegram e cria agentes que consultam dados e executam tarefas dentro dos seus sistemas, com cada ação registrada.</p></div>
+<p class="text--l intuseg-ident_value">A INTUSeg implementa inteligência artificial nos processos da corretora, transformando trabalho repetitivo em trabalho automático. Leva a informação certa ao dono pelo WhatsApp ou Telegram e cria agentes que consultam dados e executam tarefas dentro dos seus sistemas, com cada ação registrada.</p></div>
 </div>
 </div>
 </section>`;
